@@ -38,10 +38,15 @@ public class MainMenuHomeFragment extends Fragment {
     private WebView webView;
     private FirebaseAuth mAuth;
     private FirebaseUser user;
-    private TextView displayTextView;
     private String dataToSend;
 
     private TextView name1;
+    private TextView recom1View;
+    private TextView reason1View;
+    private TextView recom2View;
+    private TextView reason2View;
+    private TextView recom3View;
+    private TextView reason3View;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,6 +58,7 @@ public class MainMenuHomeFragment extends Fragment {
         // Firestore 데이터 가져오기 메서드 호출
         fetchDataFromFirestore();
     }
+
     private void fetchDataFromFirestore() {
         db.collection("daegu")
                 .get()
@@ -117,15 +123,17 @@ public class MainMenuHomeFragment extends Fragment {
                 });
 
 
-
-
-
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
         dataToSend = user.getUid(); // user uid 가져오기
 
-        displayTextView = rootView.findViewById(R.id.textgptcontext2); // TextView 초기화
-        displayTextView.setText("잠시만 기다려주십시오"); // 기본값 설정
+        recom1View = rootView.findViewById(R.id.textgptcontext3);
+        reason1View = rootView.findViewById(R.id.textgptcontext2);
+        recom2View = rootView.findViewById(R.id.textgptcontext5);
+        reason2View = rootView.findViewById(R.id.textgptcontext1);
+        recom3View = rootView.findViewById(R.id.textgptcontext4);
+        reason3View = rootView.findViewById(R.id.textgptcontext6);
+        recom1View.setText("잠시만 기다려주십시오."); // 기본값 설정
 
         webView = rootView.findViewById(R.id.HomewebView);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -147,6 +155,7 @@ public class MainMenuHomeFragment extends Fragment {
             // 네이티브 앱에서 생성한 데이터
             return dataToSend;
         }
+
         @JavascriptInterface
         public void dataToApp(String data) {
             updateGPT(data);
@@ -154,11 +163,20 @@ public class MainMenuHomeFragment extends Fragment {
 
     }
 
-    private void updateGPT(String data){
+    private void updateGPT(String data) {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                displayTextView.setText(data);
+                String[] segments = data.split("\n");
+
+                recom1View.setText(segments[0].split(":")[0].replaceAll("[0-9. -]", ""));
+                reason1View.setText(segments[0].split(":")[1].trim());
+
+                recom2View.setText(segments[1].split(":")[0].replaceAll("[0-9. -]", ""));
+                reason2View.setText(segments[1].split(":")[1].trim());
+
+                recom3View.setText(segments[2].split(":")[0].replaceAll("[0-9. -]", ""));
+                reason3View.setText(segments[2].split(":")[1].trim());
             }
         });
     }
