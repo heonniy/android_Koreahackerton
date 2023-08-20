@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.MainMenuReserveFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="예약"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"/>
+    <ImageView
+        android:layout_width="417dp"
+        android:layout_height="260dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="-17dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="380dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/mylecture" />
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="339dp"
+        android:layout_height="152dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="375dp"
+        android:src="@drawable/mylecture_inf" />
+
+    <ImageView
+        android:layout_width="69dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="274dp"
+        android:layout_marginBottom="444dp"
+        android:src="@drawable/mylecture_profile" />
+
+</RelativeLayout>
