@@ -7,31 +7,6 @@
     tools:context=".fragment.MainMenuReserveFragment">
 
     <ImageView
-        android:layout_width="417dp"
-        android:layout_height="260dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="-17dp"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginBottom="380dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/mylecture" />
-
-    <ImageView
-        android:layout_width="339dp"
-        android:layout_height="152dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="375dp"
-        android:src="@drawable/mylecture_inf" />
-
-    <ImageView
         android:layout_width="69dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"

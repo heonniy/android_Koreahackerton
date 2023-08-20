@@ -87,7 +87,7 @@ public class search2 extends AppCompatActivity {
                                 if (task.getException() != null) {
                                     // 실패한 예외를 로그로 출력합니다.
                                     Log.e("LoginActivity", "로그인 실패: " + task.getException().getMessage());
-                                    startToast("이메일이나 패스워드가 틀렸습니다.ㅠ");
+                                    startToast("이메일이나 패스워드가 틀렸습니다.");
                                 }
                             }
                         }
