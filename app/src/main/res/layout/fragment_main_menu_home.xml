@@ -130,53 +130,97 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textgptcontext1"
-                android:layout_width="311dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="24dp"
+                android:id="@+id/textgptcontext"
+                android:layout_width="290dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/aninormal"
-                android:text="어학교실\n\n영어와 같은 어쩌고는"
+                android:text="어학교실"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.413"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textimage" />
 
             <TextView
-                android:id="@+id/textgptcontext2"
-                android:layout_width="311dp"
-                android:layout_height="200dp"
+                android:id="@+id/textgptcontext1"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
                 android:fontFamily="@font/aninormal"
-                android:text="어학교실\n\n영어와 같은 어쩌고는"
+                android:text="영어와 같은 어쩌고는"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textgptcontext5" />
+
+            <TextView
+                android:id="@+id/textgptcontext2"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:fontFamily="@font/aninormal"
+                android:text="영어와 같은 어쩌고는"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textgptcontext" />
+
+            <TextView
+                android:id="@+id/textgptcontext3"
+                android:layout_width="290dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aninormal"
+                android:text="어학교실"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.413"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textimage" />
+
+            <TextView
+                android:id="@+id/textgptcontext4"
+                android:layout_width="290dp"
+                android:layout_height="47dp"
+                android:fontFamily="@font/aninormal"
+                android:text="어학교실"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.413"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textgptcontext1" />
 
             <TextView
-                android:id="@+id/textgptcontext3"
-                android:layout_width="311dp"
-                android:layout_height="200dp"
+                android:id="@+id/textgptcontext5"
+                android:layout_width="290dp"
+                android:layout_height="47dp"
                 android:fontFamily="@font/aninormal"
-                android:text="어학교실\n\n영어와 같은 어쩌고는"
+                android:text="어학교실"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.413"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textgptcontext2" />
 
             <TextView
-                android:id="@+id/textgptcontext4"
-                android:layout_width="311dp"
-                android:layout_height="200dp"
+                android:id="@+id/textgptcontext6"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
                 android:fontFamily="@font/aninormal"
-                android:text="어학교실\n\n영어와 같은 어쩌고는"
+                android:text="영어와 같은 어쩌고는"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.45"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textgptcontext3" />
+                app:layout_constraintTop_toBottomOf="@+id/textgptcontext4" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
