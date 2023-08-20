@@ -65,8 +65,9 @@ public class MainMenuMypageFragment extends Fragment {
                             if (document.exists()) {
                                 String username = document.getString("name"); // "name"은 해당 필드의 이름
                                 usernameTextView.setText(username);
-                                String age = document.getString("age");
-                                ageTextView.setText(age);
+                                long ageL = document.getLong("age");
+                                int age = (int) ageL;
+                                ageTextView.setText(String.valueOf(age));
                                 String gender = document.getString("gender");
                                 genderTextView.setText(gender);
                                 String nickname = document.getString("nickname");
