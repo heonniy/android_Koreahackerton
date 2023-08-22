@@ -40,12 +40,15 @@ public class MainMenuHomeFragment extends Fragment {
     private FirebaseUser user;
     private String dataToSend;
 
-    private TextView name1;
+//    private TextView name1;
     private TextView recom1View;
+    private TextView recom1Viewtop;
     private TextView reason1View;
     private TextView recom2View;
+    private TextView recom2Viewtop;
     private TextView reason2View;
     private TextView recom3View;
+    private TextView recom3Viewtop;
     private TextView reason3View;
 
     @Override
@@ -100,39 +103,42 @@ public class MainMenuHomeFragment extends Fragment {
         });
 
 */
-        mAuth = FirebaseAuth.getInstance();
-        db = FirebaseFirestore.getInstance();
-        name1 = rootView.findViewById(R.id.name1);
-        String currentUserUid = mAuth.getCurrentUser().getUid();
-
-        db.collection("users")
-                .document(currentUserUid)
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                        if (task.isSuccessful()) {
-                            DocumentSnapshot document = task.getResult();
-                            if (document.exists()) {
-                                String username = document.getString("name"); // "name"은 해당 필드의 이름
-                                name1.setText(username);
-
-                            }
-                        }
-                    }
-                });
+//        mAuth = FirebaseAuth.getInstance();
+//        db = FirebaseFirestore.getInstance();
+//        name1 = rootView.findViewById(R.id.name1);
+//        String currentUserUid = mAuth.getCurrentUser().getUid();
+//
+//        db.collection("users")
+//                .document(currentUserUid)
+//                .get()
+//                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+//                        if (task.isSuccessful()) {
+//                            DocumentSnapshot document = task.getResult();
+//                            if (document.exists()) {
+//                                String username = document.getString("name"); // "name"은 해당 필드의 이름
+//                                name1.setText(username);
+//
+//                            }
+//                        }
+//                    }
+//                });
 
 
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
         dataToSend = user.getUid(); // user uid 가져오기
 
-        recom1View = rootView.findViewById(R.id.textgptcontext3);
-        reason1View = rootView.findViewById(R.id.textgptcontext2);
-        recom2View = rootView.findViewById(R.id.textgptcontext5);
-        reason2View = rootView.findViewById(R.id.textgptcontext1);
-        recom3View = rootView.findViewById(R.id.textgptcontext4);
-        reason3View = rootView.findViewById(R.id.textgptcontext6);
+        recom1Viewtop = rootView.findViewById(R.id.result_text_top4);
+        recom1View = rootView.findViewById(R.id.result_text_inbox_top1);
+        reason1View = rootView.findViewById(R.id.result_text_inbox_top1_explain);
+        recom2Viewtop = rootView.findViewById(R.id.result_text_top2);
+        recom2View = rootView.findViewById(R.id.result_text_inbox_top2);
+        reason2View = rootView.findViewById(R.id.result_text_inbox_top2_explain);
+        recom3Viewtop = rootView.findViewById(R.id.result_text_top3);
+        recom3View = rootView.findViewById(R.id.result_text_inbox_top3);
+        reason3View = rootView.findViewById(R.id.result_text_inbox_top3_explain);
         recom1View.setText("잠시만 기다려주십시오."); // 기본값 설정
 
         webView = rootView.findViewById(R.id.HomewebView);
@@ -169,12 +175,15 @@ public class MainMenuHomeFragment extends Fragment {
             public void run() {
                 String[] segments = data.split("\n");
 
+                recom1Viewtop.setText(segments[0].split(":")[0].replaceAll("[0-9. -]", ""));
                 recom1View.setText(segments[0].split(":")[0].replaceAll("[0-9. -]", ""));
                 reason1View.setText(segments[0].split(":")[1].trim());
 
+                recom2Viewtop.setText(segments[1].split(":")[0].replaceAll("[0-9. -]", ""));
                 recom2View.setText(segments[1].split(":")[0].replaceAll("[0-9. -]", ""));
                 reason2View.setText(segments[1].split(":")[1].trim());
 
+                recom3Viewtop.setText(segments[2].split(":")[0].replaceAll("[0-9. -]", ""));
                 recom3View.setText(segments[2].split(":")[0].replaceAll("[0-9. -]", ""));
                 reason3View.setText(segments[2].split(":")[1].trim());
             }
