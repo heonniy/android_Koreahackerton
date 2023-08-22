@@ -11,15 +11,15 @@
         android:id="@+id/textField"
         android:layout_width="326dp"
         android:layout_height="57dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="240dp"
         android:hint="Cppva"
         app:endIconMode="password_toggle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="306dp"
+            android:layout_width="249dp"
             android:layout_height="wrap_content"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -28,8 +28,8 @@
         android:id="@+id/textField2"
         android:layout_width="344dp"
         android:layout_height="60dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="330dp"
         android:hint="1***"
         app:endIconMode="password_toggle"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPassword"
-            android:layout_width="306dp"
+            android:layout_width="249dp"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
 
@@ -45,22 +45,24 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="300dp"
-        android:layout_height="248dp"
-        android:layout_marginStart="144dp"
+        android:layout_width="253dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/finding" />
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="157dp"
         android:layout_height="44dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="176dp"
-        android:fontFamily="@font/aninormal"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="142dp"
+        android:fontFamily="@font/anibold"
         android:text="로그인"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -69,18 +71,16 @@
         android:id="@+id/registButton"
         android:layout_width="247dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
         android:clickable="true"
-        android:fontFamily="@font/aninormal"
+        android:fontFamily="@font/anibold"
         android:onClick="onTextView7Clicked"
         android:text="기존회원이 아닌경우, 회원가입하기"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textField2" />
-
 
     <TextView
         android:id="@+id/textView5"
@@ -92,7 +92,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textField"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:layout_constraintVertical_bias="1.0" />
@@ -101,22 +101,20 @@
         android:id="@+id/imageView6"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="240dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
-        app:layout_constraintEnd_toStartOf="@+id/textField"
-        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
+        app:layout_constraintVertical_bias="0.212"
         app:srcCompat="@drawable/lock" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/textField2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textField2"
         app:srcCompat="@drawable/lock" />
@@ -141,14 +139,15 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/app_name"
         android:src="@drawable/loginbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.359"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registButton"
-        app:layout_constraintVertical_bias="0.279" />
+        app:layout_constraintVertical_bias="0.195" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

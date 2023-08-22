@@ -19,12 +19,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:fontFamily="@font/aninormal"
+            android:fontFamily="@font/anibold"
             android:text="회원가입"
             android:textSize="24sp"
-            android:textStyle="bold"
+            android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintHorizontal_bias="0.382"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,20 +32,20 @@
             android:id="@+id/imageView3"
             android:layout_width="142dp"
             android:layout_height="121dp"
-            android:layout_marginStart="92dp"
+            android:layout_marginStart="60dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.426"
             app:layout_constraintStart_toStartOf="@+id/newperson"
-            app:srcCompat="@drawable/logining"
+            app:srcCompat="@drawable/compoment"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="-12dp" />
+            tools:layout_editor_absoluteY="1dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/namefield"
-            android:layout_width="160dp"
+            android:layout_width="130dp"
             android:layout_height="65dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="160dp"
             android:hint="김한국"
             app:endIconMode="none"
             app:layout_constraintStart_toStartOf="parent"
@@ -64,29 +64,26 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:fontFamily="@font/aninormal"
             android:text="별명"
             android:textSize="15sp"
 
-            android:textStyle="normal"
+            android:textStyle="normal|bold"
             app:layout_constraintBottom_toTopOf="@+id/nicknamefield"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.594"
+            app:layout_constraintHorizontal_bias="0.576"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nicknamefield"
-            android:layout_width="160dp"
+            android:layout_width="130dp"
             android:layout_height="65dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginEnd="28dp"
+            android:layout_marginTop="160dp"
             android:hint="한국돌이"
             app:endIconMode="none"
-            app:layout_constraintHorizontal_bias="0.451"
             app:layout_constraintStart_toEndOf="@+id/namefield"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -107,60 +104,59 @@
             android:text="이름"
             android:textSize="15sp"
 
-            android:textStyle="normal"
+            android:textStyle="normal|bold"
             app:layout_constraintBottom_toTopOf="@+id/namefield"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintHorizontal_bias="0.012"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/nickname3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:fontFamily="@font/aninormal"
             android:text="아이디"
 
             android:textSize="15sp"
-            android:textStyle="normal"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/login_id_Field"
-            app:layout_constraintHorizontal_bias="0.038"
             app:layout_constraintStart_toStartOf="parent" />
+
 
         <TextView
             android:id="@+id/nickname6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aninormal"
-            android:text="비밀번호"
 
+            android:text="비밀번호"
             android:textSize="15sp"
-            android:textStyle="normal"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/login_pw_field"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintHorizontal_bias="0.009"
             app:layout_constraintStart_toStartOf="parent" />
-
 
         <TextView
             android:id="@+id/age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:fontFamily="@font/aninormal"
+            android:layout_marginStart="4dp"
 
+            android:fontFamily="@font/aninormal"
             android:text="나이"
             android:textSize="15sp"
-            android:textStyle="normal"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/agefield"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/agefield"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_width="280dp"
+            android:layout_height="65dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="205dp"
+            android:layout_marginTop="250dp"
             android:hint="56"
             app:endIconMode="none"
             app:layout_constraintStart_toStartOf="parent"
@@ -182,23 +178,21 @@
             android:id="@+id/nickname7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:fontFamily="@font/aninormal"
             android:text="성별"
 
             android:textSize="15sp"
-            android:textStyle="normal"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/gender"
-            app:layout_constraintHorizontal_bias="0.046"
             app:layout_constraintStart_toStartOf="parent" />
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/gender"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_width="280dp"
+            android:layout_height="65dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="285dp"
+            android:layout_marginTop="345dp"
             android:hint="ex)남/여 입력"
             app:endIconMode="none"
             app:layout_constraintBottom_toTopOf="@+id/login_id_Field"
@@ -219,10 +213,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_id_Field"
-            android:layout_width="340dp"
+            android:layout_width="280dp"
             android:layout_height="65dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="370dp"
+            android:layout_marginTop="440dp"
             android:hint="Cppva"
             app:endIconMode="none"
             app:layout_constraintStart_toStartOf="parent"
@@ -241,10 +235,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_pw_field"
-            android:layout_width="340dp"
+            android:layout_width="280dp"
             android:layout_height="65dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="450dp"
+            android:layout_marginTop="530dp"
             android:hint="12**"
             app:endIconMode="password_toggle"
             app:layout_constraintStart_toStartOf="parent"
@@ -263,10 +257,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_mail_Field"
-            android:layout_width="340dp"
+            android:layout_width="280dp"
             android:layout_height="67dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="530dp"
+            android:layout_marginTop="620dp"
             android:hint="abc123@naver.com"
             app:endIconMode="none"
             app:layout_constraintStart_toStartOf="parent"
@@ -287,26 +281,25 @@
             android:id="@+id/mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="280dp"
 
             android:fontFamily="@font/aninormal"
             android:maxLines="1"
             android:text="이메일"
             android:textSize="15sp"
-            android:textStyle="normal"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/login_mail_Field"
-            app:layout_constraintHorizontal_bias="0.051"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/newperson"
             app:layout_constraintVertical_bias="1.0" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_telefield"
-            android:layout_width="340dp"
+            android:layout_width="280dp"
             android:layout_height="65dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="620dp"
+            android:layout_marginTop="720dp"
             android:hint="010-1234-5678"
             app:endIconMode="none"
             app:layout_constraintStart_toStartOf="parent"
@@ -327,12 +320,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:fontFamily="@font/aninormal"
             android:maxLines="1"
             android:text="주소"
             android:textSize="15sp"
-            android:textStyle="normal"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/login_add_field"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -341,22 +334,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:fontFamily="@font/aninormal"
             android:maxLines="1"
             android:text="전화번호"
             android:textSize="15sp"
-            android:textStyle="normal"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/login_telefield"
             app:layout_constraintStart_toStartOf="parent" />
         <!-- 기존 코드 생략 -->
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_add_field"
-            android:layout_width="340dp"
+            android:layout_width="280dp"
             android:layout_height="65dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="705dp"
+            android:layout_marginTop="815dp"
             android:hint="울산시 울주군"
             app:endIconMode="none"
             app:layout_constraintStart_toStartOf="parent"
@@ -375,12 +368,12 @@
 
         <ImageButton
             android:id="@+id/signup_button"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="800dp"
+            android:layout_marginTop="900dp"
             android:background="#00FFFFFF"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/signup_button"
+            android:src="@drawable/daum_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.406"
             app:layout_constraintStart_toStartOf="parent"

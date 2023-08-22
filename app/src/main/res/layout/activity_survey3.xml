@@ -9,98 +9,110 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="165dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="168dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/survey3_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/compoment"
         tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/purpose_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:fontFamily="@font/gmarketsansttfmedium"
+        android:layout_marginStart="34dp"
+        android:fontFamily="@font/anibold"
         android:text="강좌이용 목적선택"
-        android:textSize="27sp"
+        android:textSize="23sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/main_strock"
-        android:layout_width="400dp"
-        android:layout_height="500dp"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/main_strock"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <ImageView
+        android:id="@+id/main_strock"
+        android:layout_width="336dp"
+        android:layout_height="456dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/main_strock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/purpose_title"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.296" />
 
     <ImageButton
         android:id="@+id/purpose1"
         android:layout_width="115dp"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="36dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@color/white"
         android:scaleType="fitEnd"
         android:src="@drawable/purpose1_img"
+        app:layout_constraintEnd_toEndOf="@+id/main_strock"
+        app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="@+id/main_strock"
         app:layout_constraintTop_toTopOf="@+id/main_strock"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="300dp"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="42dp"
+        android:fontFamily="@font/aninormal"
         android:text="새로운 일자리"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/main_strock"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="@+id/main_strock"
         app:layout_constraintTop_toTopOf="@+id/main_strock" />
 
     <ImageButton
         android:id="@+id/purpose2"
         android:layout_width="136dp"
         android:layout_height="39dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="38dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@color/white"
         android:scaleType="fitEnd"
         android:src="@drawable/purpose2_img"
+        app:layout_constraintEnd_toEndOf="@+id/main_strock"
+        app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="@+id/main_strock"
-        app:layout_constraintTop_toTopOf="@+id/main_strock"
+        app:layout_constraintTop_toBottomOf="@+id/purpose1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:layout_width="300dp"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/aninormal"
         android:text="여가, 취미 활동"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_strock"
         app:layout_constraintTop_toTopOf="@+id/main_strock" />
 
     <ImageButton
         android:id="@+id/purpose3"
         android:layout_width="222dp"
         android:layout_height="30dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="168dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@color/white"
         android:scaleType="fitEnd"
@@ -110,21 +122,24 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="300dp"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="195dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/aninormal"
         android:text="다양한 사람들과 함께하는 활동"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/main_strock" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_strock"
+        app:layout_constraintTop_toBottomOf="@+id/purpose2" />
 
     <ImageButton
         android:id="@+id/purpose4"
         android:layout_width="167dp"
         android:layout_height="25dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="274dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="246dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@color/white"
         android:scaleType="fitEnd"
@@ -136,19 +151,21 @@
     <TextView
         android:layout_width="300dp"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="274dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="252dp"
+        android:fontFamily="@font/aninormal"
         android:text="전문성 있는 수업 수강"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_strock"
         app:layout_constraintTop_toTopOf="@+id/main_strock" />
 
     <ImageButton
         android:id="@+id/purpose5"
         android:layout_width="132dp"
         android:layout_height="28dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="346dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="312dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@color/white"
         android:scaleType="fitEnd"
@@ -160,19 +177,21 @@
     <TextView
         android:layout_width="300dp"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="322dp"
+        android:fontFamily="@font/aninormal"
         android:text="건강한 신체 관리"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_strock"
         app:layout_constraintTop_toTopOf="@+id/main_strock" />
 
     <ImageButton
         android:id="@+id/purpose6"
         android:layout_width="133dp"
         android:layout_height="26dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="419dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="380dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@color/white"
         android:scaleType="fitEnd"
@@ -184,11 +203,13 @@
     <TextView
         android:layout_width="300dp"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="422dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="389dp"
+        android:fontFamily="@font/aninormal"
         android:text="풍부한 문화 활동"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_strock"
         app:layout_constraintTop_toTopOf="@+id/main_strock" />
 
 
