@@ -181,5 +181,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.221" />
 
+    <TextView
+        android:id="@+id/address2"
+        android:layout_width="221dp"
+        android:layout_height="25dp"
+
+        android:fontFamily="@font/anilight"
+        android:maxLines="1"
+        android:text="©CppVa 2023 Korea hackerton"
+        android:textSize="12sp"
+        android:textStyle="normal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_img_1"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

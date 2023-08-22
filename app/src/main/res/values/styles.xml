@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Widget.CustomBottomNavigationView"
         parent="@style/Widget.Design.BottomNavigationView">
@@ -7,5 +8,6 @@
         <item name="android:minHeight">0dp</item>
         <!-- 다른 속성들 -->
     </style>
+
 
 </resources>

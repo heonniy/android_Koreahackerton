@@ -7,6 +7,24 @@
     tools:context=".survey_2">
 
 
+    <TextView
+        android:id="@+id/address3"
+        android:layout_width="221dp"
+        android:layout_height="25dp"
+
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/anilight"
+        android:maxLines="1"
+        android:text="©CppVa 2023 Korea hackerton"
+        android:textSize="12sp"
+
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_2"
+        app:layout_constraintVertical_bias="0.0" />
+
     <ImageView
         android:id="@+id/survey_2_img"
         android:layout_width="168dp"

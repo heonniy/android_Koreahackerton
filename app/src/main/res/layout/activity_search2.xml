@@ -62,7 +62,7 @@
         android:layout_marginTop="142dp"
         android:fontFamily="@font/anibold"
         android:text="로그인"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
