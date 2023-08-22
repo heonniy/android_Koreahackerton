@@ -130,7 +130,7 @@ public class MainMenuHomeFragment extends Fragment {
         user = mAuth.getCurrentUser();
         dataToSend = user.getUid(); // user uid 가져오기
 
-        recom1Viewtop = rootView.findViewById(R.id.result_text_top4);
+        recom1Viewtop = rootView.findViewById(R.id.result_text_top1);
         recom1View = rootView.findViewById(R.id.result_text_inbox_top1);
         reason1View = rootView.findViewById(R.id.result_text_inbox_top1_explain);
         recom2Viewtop = rootView.findViewById(R.id.result_text_top2);
