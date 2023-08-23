@@ -52,6 +52,10 @@ public class MainMenuHomeFragment extends Fragment {
     private TextView recom3Viewtop;
     private TextView reason3View;
 
+    private TextView imogi1;
+    private TextView imogi2;
+    private TextView imogi3;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -146,6 +150,10 @@ public class MainMenuHomeFragment extends Fragment {
         recom3Viewtop = rootView.findViewById(R.id.result_text_top3);
         recom3View = rootView.findViewById(R.id.result_text_inbox_top3);
         reason3View = rootView.findViewById(R.id.result_text_inbox_top3_explain);
+
+        imogi1 = rootView.findViewById(R.id.top_imogi1);
+        imogi2 = rootView.findViewById(R.id.top_imogi2);
+        imogi3 = rootView.findViewById(R.id.top_imogi3);
         recom1View.setText("잠시만 기다려주십시오."); // 기본값 설정
 
         webView = rootView.findViewById(R.id.HomewebView);
@@ -199,63 +207,91 @@ public class MainMenuHomeFragment extends Fragment {
 
                 if (recom1Viewtop.getText().toString().equals("어학교실")) {
                     topImage1.setImageResource(R.drawable.top_langu);
+                    imogi1.setText("✏️");
                 } else if (recom1Viewtop.getText().toString().equals("인문학교실")) {
                     topImage1.setImageResource(R.drawable.top_lec);
+                    imogi1.setText("📖");
                 } else if (recom1Viewtop.getText().toString().equals("스마트교실")) {
                     topImage1.setImageResource(R.drawable.top_smart);
+                    imogi1.setText("🖥️");
                 } else if (recom1Viewtop.getText().toString().equals("스포츠교실")) {
                     topImage1.setImageResource(R.drawable.top_sport);
+                    imogi1.setText("🥍");
                 } else if (recom1Viewtop.getText().toString().equals("미술교실")) {
                     topImage1.setImageResource(R.drawable.tope_paint);
+                    imogi1.setText("🖌️");
                 } else if (recom1Viewtop.getText().toString().equals("음악교실")) {
                     topImage1.setImageResource(R.drawable.top_music);
+                    imogi1.setText("🎹");
+
                 } else if (recom1Viewtop.getText().toString().equals("직업교실")) {
                     topImage1.setImageResource(R.drawable.top_job);
+                    imogi1.setText("👮🏻");
                 } else if (recom1Viewtop.getText().toString().equals("요리교실")) {
                     topImage1.setImageResource(R.drawable.top_cook);
+                    imogi1.setText("🍳");
                 } else if (recom1Viewtop.getText().toString().equals("취미교실")) {
                     topImage1.setImageResource(R.drawable.top_hobb);
+                    imogi1.setText("🎮");
                 }
 
                 if (recom2Viewtop.getText().toString().equals("어학교실")) {
                     topImage2.setImageResource(R.drawable.top_langu);
+                    imogi2.setText("✏️");
                 } else if (recom2Viewtop.getText().toString().equals("인문학교실")) {
                     topImage2.setImageResource(R.drawable.top_lec);
+                    imogi2.setText("📖");
                 } else if (recom2Viewtop.getText().toString().equals("스마트교실")) {
                     topImage2.setImageResource(R.drawable.top_smart);
+                    imogi2.setText("🖥️");
                 } else if (recom2Viewtop.getText().toString().equals("스포츠교실")) {
                     topImage2.setImageResource(R.drawable.top_sport);
+                    imogi2.setText("🥍");
                 } else if (recom2Viewtop.getText().toString().equals("미술교실")) {
                     topImage2.setImageResource(R.drawable.tope_paint);
+                    imogi2.setText("🖌️");
                 } else if (recom2Viewtop.getText().toString().equals("음악교실")) {
                     topImage2.setImageResource(R.drawable.top_music);
+                    imogi2.setText("🎹");
                 } else if (recom2Viewtop.getText().toString().equals("직업교실")) {
                     topImage2.setImageResource(R.drawable.top_job);
+                    imogi2.setText("👮🏻");
                 } else if (recom2Viewtop.getText().toString().equals("요리교실")) {
                     topImage2.setImageResource(R.drawable.top_cook);
+                    imogi2.setText("🍳");
                 } else if (recom2Viewtop.getText().toString().equals("취미교실")) {
                     topImage2.setImageResource(R.drawable.top_hobb);
+                    imogi2.setText("🎮");
                 }
 
 
                 if (recom3Viewtop.getText().toString().equals("어학교실")) {
                     topImage3.setImageResource(R.drawable.top_langu);
+                    imogi3.setText("✏️");
                 } else if (recom3Viewtop.getText().toString().equals("인문학교실")) {
                     topImage3.setImageResource(R.drawable.top_lec);
+                    imogi3.setText("📖");
                 } else if (recom3Viewtop.getText().toString().equals("스마트교실")) {
                     topImage3.setImageResource(R.drawable.top_smart);
+                    imogi3.setText("🖥️");
                 } else if (recom3Viewtop.getText().toString().equals("스포츠교실")) {
                     topImage3.setImageResource(R.drawable.top_sport);
+                    imogi3.setText("🥍");
                 } else if (recom3Viewtop.getText().toString().equals("미술교실")) {
                     topImage3.setImageResource(R.drawable.tope_paint);
+                    imogi3.setText("🖌️");
                 } else if (recom3Viewtop.getText().toString().equals("음악교실")) {
                     topImage3.setImageResource(R.drawable.top_music);
+                    imogi3.setText("🎹");
                 } else if (recom3Viewtop.getText().toString().equals("직업교실")) {
                     topImage3.setImageResource(R.drawable.top_job);
+                    imogi3.setText("👮🏻");
                 } else if (recom3Viewtop.getText().toString().equals("요리교실")) {
                     topImage3.setImageResource(R.drawable.top_cook);
+                    imogi3.setText("🍳");
                 } else if (recom3Viewtop.getText().toString().equals("취미교실")) {
                     topImage3.setImageResource(R.drawable.top_hobb);
+                    imogi3.setText("🎮");
                 }
             }
         });
