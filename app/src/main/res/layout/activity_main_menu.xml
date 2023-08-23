@@ -11,6 +11,7 @@
         android:id="@+id/menu_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:layout_marginBottom="?attr/actionBarSize">
 
 
@@ -28,6 +29,7 @@
         app:itemIconTint="@drawable/menu_item_color"
         app:itemTextColor="@drawable/menu_item_color"
         app:labelVisibilityMode="labeled"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/main_menu_butttom"
         />
