@@ -104,7 +104,6 @@
         android:id="@+id/top_image1"
         android:layout_width="65dp"
         android:layout_height="60dp"
-        android:layout_marginStart="3dp"
         android:layout_marginTop="46dp"
         app:layout_constraintBottom_toTopOf="@+id/result_text_top1"
         app:layout_constraintEnd_toEndOf="parent"
