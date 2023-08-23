@@ -278,6 +278,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintBottom_toTopOf="@+id/HomewebView"
         app:layout_constraintTop_toBottomOf="@+id/result_text_inbox_top3" />
 
     <WebView

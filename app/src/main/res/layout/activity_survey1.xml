@@ -9,47 +9,47 @@
 
     <ImageView
         android:id="@+id/survey_img"
-        android:layout_width="168dp"
+        android:layout_width="158dp"
         android:layout_height="148dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085"
+        app:layout_constraintVertical_bias="0.067"
         app:srcCompat="@drawable/survey_1" />
 
     <ImageView
         android:id="@+id/survey_img_1"
-        android:layout_width="336dp"
-        android:layout_height="456dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="306dp"
+        android:layout_height="421dp"
+        android:layout_marginTop="115dp"
         android:layout_marginBottom="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/survey_img"
+        app:layout_constraintVertical_bias="0.592"
         app:srcCompat="@drawable/totalimage" />
 
     <ImageButton
         android:id="@+id/farmer_button"
-        android:layout_width="70dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="20dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/survey_img_1"
         app:layout_constraintStart_toStartOf="@+id/survey_img_1"
         app:layout_constraintTop_toTopOf="@+id/survey_img_1"
-        app:layout_constraintVertical_bias="0.195"
+        app:layout_constraintVertical_bias="0.202"
         app:srcCompat="@drawable/farmer"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/police_button"
-        android:layout_width="70dp"
-        android:layout_height="58dp"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
         android:layout_marginStart="44dp"
         android:background="@color/white"
         android:scaleType="centerInside"
@@ -62,7 +62,7 @@
 
     <ImageButton
         android:id="@+id/seller_button"
-        android:layout_width="71dp"
+        android:layout_width="55dp"
         android:layout_height="63dp"
         android:background="@color/white"
         android:scaleType="centerInside"
@@ -77,8 +77,8 @@
 
     <ImageButton
         android:id="@+id/programer_button"
-        android:layout_width="68dp"
-        android:layout_height="56dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginStart="24dp"
         android:background="@color/white"
         android:scaleType="centerInside"
@@ -91,8 +91,8 @@
 
     <ImageButton
         android:id="@+id/scientist_button"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/survey_img_1"
@@ -107,22 +107,22 @@
     <ImageButton
         android:id="@+id/mechanic_button"
         android:layout_width="77dp"
-        android:layout_height="64dp"
+        android:layout_height="60dp"
         android:layout_marginStart="35dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/survey_img_1"
         app:layout_constraintEnd_toEndOf="@+id/survey_img_1"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/scientist_button"
         app:layout_constraintTop_toBottomOf="@+id/seller_button"
-        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintVertical_bias="0.188"
         app:srcCompat="@drawable/mechanic"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/worker_button"
-        android:layout_width="67dp"
+        android:layout_width="55dp"
         android:layout_height="61dp"
         android:layout_marginStart="24dp"
         android:background="@color/white"
@@ -136,31 +136,31 @@
 
     <ImageButton
         android:id="@+id/soldier_button"
-        android:layout_width="66dp"
+        android:layout_width="55dp"
         android:layout_height="59dp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="48dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/survey_img_1"
         app:layout_constraintStart_toEndOf="@+id/worker_button"
         app:layout_constraintTop_toBottomOf="@+id/scientist_button"
-        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintVertical_bias="0.412"
         app:srcCompat="@drawable/soldier"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/nothing_button"
-        android:layout_width="80dp"
-        android:layout_height="63dp"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/survey_img_1"
         app:layout_constraintEnd_toEndOf="@+id/survey_img_1"
-        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@+id/soldier_button"
         app:layout_constraintTop_toBottomOf="@+id/mechanic_button"
 
-        app:layout_constraintVertical_bias="0.401"
+        app:layout_constraintVertical_bias="0.392"
         app:srcCompat="@drawable/nothing"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -173,13 +173,13 @@
         android:fontFamily="@font/anibold"
         android:maxLines="1"
         android:text="직업군 선택"
-        android:textSize="23sp"
+        android:textSize="22sp"
         android:textStyle="normal"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.207" />
 
     <TextView
         android:id="@+id/address2"
@@ -192,11 +192,12 @@
         android:textSize="12sp"
         android:textStyle="normal"
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/survey_img_1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/survey_img_1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/soldier_button"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

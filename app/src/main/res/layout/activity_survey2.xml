@@ -12,79 +12,79 @@
         android:layout_width="221dp"
         android:layout_height="25dp"
 
-        android:layout_marginBottom="28dp"
         android:fontFamily="@font/anilight"
         android:maxLines="1"
         android:text="©CppVa 2023 Korea hackerton"
         android:textSize="12sp"
 
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/total_2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/cooking_button"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/survey_2_img"
-        android:layout_width="168dp"
+        android:layout_width="158dp"
         android:layout_height="148dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115"
+        app:layout_constraintVertical_bias="0.071"
         app:srcCompat="@drawable/yeppi" />
 
     <ImageView
         android:id="@+id/total_2"
-        android:layout_width="336dp"
-        android:layout_height="456dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="306dp"
+        android:layout_height="421dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address"
-        app:layout_constraintVertical_bias="0.012"
         app:srcCompat="@drawable/total_2" />
 
     <ImageButton
         android:id="@+id/book_button"
-        android:layout_width="57dp"
-        android:layout_height="59dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/total_2"
         app:layout_constraintTop_toTopOf="@+id/total_2"
-        app:layout_constraintVertical_bias="0.197"
+        app:layout_constraintVertical_bias="0.194"
         app:srcCompat="@drawable/book"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/readingbook_button"
-        android:layout_width="70dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="322dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="3dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toEndOf="@+id/book_button"
         app:layout_constraintTop_toTopOf="@+id/total_2"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.199"
         app:srcCompat="@drawable/readingbook"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/smart_learn_button"
-        android:layout_width="59dp"
+        android:layout_width="55dp"
         android:layout_height="56dp"
         android:background="@color/white"
         android:scaleType="centerInside"
@@ -99,8 +99,8 @@
 
     <ImageButton
         android:id="@+id/sports_button"
-        android:layout_width="68dp"
-        android:layout_height="56dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginStart="23dp"
         android:background="@color/white"
         android:scaleType="centerInside"
@@ -113,93 +113,93 @@
 
     <ImageButton
         android:id="@+id/painting_button"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="48dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintStart_toEndOf="@+id/sports_button"
         app:layout_constraintTop_toBottomOf="@+id/readingbook_button"
-        app:layout_constraintVertical_bias="0.217"
+        app:layout_constraintVertical_bias="0.213"
         app:srcCompat="@drawable/painting"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/music_button"
-        android:layout_width="77dp"
-        android:layout_height="64dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintEnd_toEndOf="@+id/total_2"
-        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintHorizontal_bias="0.621"
         app:layout_constraintStart_toEndOf="@+id/painting_button"
         app:layout_constraintTop_toBottomOf="@+id/smart_learn_button"
-        app:layout_constraintVertical_bias="0.214"
+        app:layout_constraintVertical_bias="0.21"
         app:srcCompat="@drawable/music"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/job_button"
-        android:layout_width="67dp"
-        android:layout_height="61dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginStart="24dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintStart_toStartOf="@+id/total_2"
         app:layout_constraintTop_toBottomOf="@+id/sports_button"
-        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintVertical_bias="0.425"
         app:srcCompat="@drawable/job"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/cooking_button"
-        android:layout_width="66dp"
-        android:layout_height="59dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginStart="44dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintStart_toEndOf="@+id/job_button"
         app:layout_constraintTop_toBottomOf="@+id/painting_button"
-        app:layout_constraintVertical_bias="0.438"
+        app:layout_constraintVertical_bias="0.398"
         app:srcCompat="@drawable/cooking"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/chess_button"
-        android:layout_width="80dp"
-        android:layout_height="63dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:background="@color/white"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/total_2"
         app:layout_constraintEnd_toEndOf="@+id/total_2"
-        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintHorizontal_bias="0.726"
         app:layout_constraintStart_toEndOf="@+id/cooking_button"
         app:layout_constraintTop_toBottomOf="@+id/music_button"
 
-        app:layout_constraintVertical_bias="0.41"
+        app:layout_constraintVertical_bias="0.384"
         app:srcCompat="@drawable/chess"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
 
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="44dp"
         android:fontFamily="@font/anibold"
         android:maxLines="1"
         android:text="관심분야 선택"
-        android:textSize="23sp"
+        android:textSize="21.5sp"
         android:textStyle="normal"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.207" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
