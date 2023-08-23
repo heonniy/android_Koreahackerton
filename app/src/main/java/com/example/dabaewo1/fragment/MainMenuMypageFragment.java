@@ -25,11 +25,8 @@ public class MainMenuMypageFragment extends Fragment {
     private FirebaseFirestore db;
     private EditText usernameTextView;
     private EditText ageTextView;
-    private EditText genderTextView;
     private EditText nicknameTextView;
     private EditText idTextView;
-
-    private EditText emailTextView;
     private EditText phonenumberTextView;
     private EditText addressTextView;
 
@@ -43,10 +40,8 @@ public class MainMenuMypageFragment extends Fragment {
         db = FirebaseFirestore.getInstance();
         usernameTextView = rootView.findViewById(R.id.username);
         ageTextView = rootView.findViewById(R.id.age);
-        genderTextView = rootView.findViewById(R.id.gender);
         nicknameTextView = rootView.findViewById(R.id.nickname);
         idTextView = rootView.findViewById(R.id.id_1);
-        emailTextView = rootView.findViewById(R.id.email_1);
         phonenumberTextView = rootView.findViewById(R.id.phone_number_1);
         addressTextView = rootView.findViewById(R.id.address_1);
 
@@ -68,14 +63,8 @@ public class MainMenuMypageFragment extends Fragment {
                                 long ageL = document.getLong("age");
                                 int age = (int) ageL;
                                 ageTextView.setText(String.valueOf(age));
-                                String gender = document.getString("gender");
-                                genderTextView.setText(gender);
                                 String nickname = document.getString("nickname");
                                 nicknameTextView.setText(nickname);
-
-                                String email = document.getString("email");
-                                idTextView.setText(email);
-                                emailTextView.setText(email);
                                 String phone = document.getString("phoneNumber");
                                 phonenumberTextView.setText(phone);
                                 String address = document.getString("address");
@@ -139,31 +128,7 @@ public class MainMenuMypageFragment extends Fragment {
             }
         });
 
-        emailTextView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE || (event != null &&
-                        event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-                    // 엔터 키를 눌렀을 때 파이어베이스 정보 수정
-                    String email =  emailTextView.getText().toString();
-                    db.collection("users")
-                            .document(currentUserUid)
-                            .update("email", email)
-                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if (task.isSuccessful()) {
-                                        Toast.makeText(getContext(), "이메일,아이디 정보가 업데이트되었습니다.", Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(getContext(), "이메일,아이디 정보 업데이트 실패", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-                    return true;
-                }
-                return false;
-            }
-        });
+
 
        idTextView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -208,31 +173,6 @@ public class MainMenuMypageFragment extends Fragment {
                                         Toast.makeText(getContext(), "나이 정보가 업데이트되었습니다.", Toast.LENGTH_SHORT).show();
                                     } else {
                                         Toast.makeText(getContext(), "나이 정보 업데이트 실패", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-                    return true;
-                }
-                return false;
-            }
-        });
-        genderTextView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE || (event != null &&
-                        event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-                    // 엔터 키를 눌렀을 때 파이어베이스 정보 수정
-                    String gender =  genderTextView.getText().toString();
-                    db.collection("users")
-                            .document(currentUserUid)
-                            .update("gender", gender)
-                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if (task.isSuccessful()) {
-                                        Toast.makeText(getContext(), "성별 정보가 업데이트되었습니다.", Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(getContext(), "성별 정보 업데이트 실패", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
