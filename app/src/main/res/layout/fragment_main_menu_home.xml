@@ -61,6 +61,7 @@
         android:id="@+id/title_main1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/anibold"
         android:text=" 다배워,DABAEWO"
         android:textColor="@color/white"
