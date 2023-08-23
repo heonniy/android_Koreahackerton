@@ -60,7 +60,6 @@
         android:layout_width="290dp"
         android:layout_height="400dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/mypage_rec_ec"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
