@@ -154,7 +154,6 @@ public class MainMenuHomeFragment extends Fragment {
         imogi1 = rootView.findViewById(R.id.top_imogi1);
         imogi2 = rootView.findViewById(R.id.top_imogi2);
         imogi3 = rootView.findViewById(R.id.top_imogi3);
-        recom1View.setText("잠시만 기다려주십시오."); // 기본값 설정
 
         webView = rootView.findViewById(R.id.HomewebView);
         webView.getSettings().setJavaScriptEnabled(true);
