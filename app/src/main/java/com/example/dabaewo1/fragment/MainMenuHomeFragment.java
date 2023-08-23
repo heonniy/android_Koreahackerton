@@ -9,6 +9,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -86,6 +87,9 @@ public class MainMenuHomeFragment extends Fragment {
                 });
     }
 
+    private ImageView topImage1;
+    private ImageView topImage2;
+    private ImageView topImage3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -93,6 +97,9 @@ public class MainMenuHomeFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main_menu_home, container, false);
 
         fragmentManager = requireActivity().getSupportFragmentManager();
+        topImage1 = rootView.findViewById(R.id.top_image1);
+        topImage2 = rootView.findViewById(R.id.top_image2);
+        topImage3 = rootView.findViewById(R.id.top_image3);
 
      /*   rootView.findViewById(R.id.btn_gpt).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -175,6 +182,9 @@ public class MainMenuHomeFragment extends Fragment {
             public void run() {
                 String[] segments = data.split("\n");
 
+
+
+
                 recom1Viewtop.setText(segments[0].split(":")[0].replaceAll("[0-9. -]", ""));
                 recom1View.setText(segments[0].split(":")[0].replaceAll("[0-9. -]", ""));
                 reason1View.setText(segments[0].split(":")[1].trim());
@@ -186,6 +196,67 @@ public class MainMenuHomeFragment extends Fragment {
                 recom3Viewtop.setText(segments[2].split(":")[0].replaceAll("[0-9. -]", ""));
                 recom3View.setText(segments[2].split(":")[0].replaceAll("[0-9. -]", ""));
                 reason3View.setText(segments[2].split(":")[1].trim());
+
+                if (recom1Viewtop.getText().toString().equals("어학 교실")) {
+                    topImage1.setImageResource(R.drawable.top_langu);
+                } else if (recom1Viewtop.getText().toString().equals("인문학 교실")) {
+                    topImage1.setImageResource(R.drawable.top_lec);
+                } else if (recom1Viewtop.getText().toString().equals("스마트 교실")) {
+                    topImage1.setImageResource(R.drawable.top_smart);
+                } else if (recom1Viewtop.getText().toString().equals("스포츠 교실")) {
+                    topImage1.setImageResource(R.drawable.top_sport);
+                } else if (recom1Viewtop.getText().toString().equals("미술 교실")) {
+                    topImage1.setImageResource(R.drawable.tope_paint);
+                } else if (recom1Viewtop.getText().toString().equals("음악 교실")) {
+                    topImage1.setImageResource(R.drawable.top_music);
+                } else if (recom1Viewtop.getText().toString().equals("직업 교실")) {
+                    topImage1.setImageResource(R.drawable.top_job);
+                } else if (recom1Viewtop.getText().toString().equals("요리 교실")) {
+                    topImage1.setImageResource(R.drawable.top_cook);
+                } else if (recom1Viewtop.getText().toString().equals("취미 교실")) {
+                    topImage1.setImageResource(R.drawable.top_hobb);
+                }
+
+                if (recom2Viewtop.getText().toString().equals("어학 교실")) {
+                    topImage2.setImageResource(R.drawable.top_langu);
+                } else if (recom2Viewtop.getText().toString().equals("인문학 교실")) {
+                    topImage2.setImageResource(R.drawable.top_lec);
+                } else if (recom2Viewtop.getText().toString().equals("스마트 교실")) {
+                    topImage2.setImageResource(R.drawable.top_smart);
+                } else if (recom2Viewtop.getText().toString().equals("스포츠 교실")) {
+                    topImage2.setImageResource(R.drawable.top_sport);
+                } else if (recom2Viewtop.getText().toString().equals("미술 교실")) {
+                    topImage2.setImageResource(R.drawable.tope_paint);
+                } else if (recom2Viewtop.getText().toString().equals("음악 교실")) {
+                    topImage2.setImageResource(R.drawable.top_music);
+                } else if (recom2Viewtop.getText().toString().equals("직업 교실")) {
+                    topImage2.setImageResource(R.drawable.top_job);
+                } else if (recom2Viewtop.getText().toString().equals("요리 교실")) {
+                    topImage2.setImageResource(R.drawable.top_cook);
+                } else if (recom2Viewtop.getText().toString().equals("취미 교실")) {
+                    topImage2.setImageResource(R.drawable.top_hobb);
+                }
+
+
+                if (recom3Viewtop.getText().toString().equals("어학 교실")) {
+                    topImage3.setImageResource(R.drawable.top_langu);
+                } else if (recom3Viewtop.getText().toString().equals("인문학 교실")) {
+                    topImage3.setImageResource(R.drawable.top_lec);
+                } else if (recom3Viewtop.getText().toString().equals("스마트 교실")) {
+                    topImage3.setImageResource(R.drawable.top_smart);
+                } else if (recom3Viewtop.getText().toString().equals("스포츠 교실")) {
+                    topImage3.setImageResource(R.drawable.top_sport);
+                } else if (recom3Viewtop.getText().toString().equals("미술 교실")) {
+                    topImage3.setImageResource(R.drawable.tope_paint);
+                } else if (recom3Viewtop.getText().toString().equals("음악 교실")) {
+                    topImage3.setImageResource(R.drawable.top_music);
+                } else if (recom3Viewtop.getText().toString().equals("직업 교실")) {
+                    topImage3.setImageResource(R.drawable.top_job);
+                } else if (recom3Viewtop.getText().toString().equals("요리 교실")) {
+                    topImage3.setImageResource(R.drawable.top_cook);
+                } else if (recom3Viewtop.getText().toString().equals("취미 교실")) {
+                    topImage3.setImageResource(R.drawable.top_hobb);
+                }
             }
         });
     }
