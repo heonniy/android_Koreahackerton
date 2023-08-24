@@ -1,5 +1,4 @@
 package com.example.dabaewo1.fragment;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -49,6 +49,19 @@ public class MainMenuSearchFragment extends Fragment {
 
         // Firebase 데이터 가져오기
         fetchFirebaseData();
+
+        // book_1 이미지 버튼 클릭 이벤트 처리
+        rootView.findViewById(R.id.book_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchLanguageFragment = new Search_languageFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchLanguageFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
 
         return rootView;
     }
