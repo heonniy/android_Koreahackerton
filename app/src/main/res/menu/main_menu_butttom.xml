@@ -3,22 +3,32 @@
 
     <item
         android:id="@+id/menu_home"
-        android:icon="@drawable/home"
+        android:icon="@drawable/baseline_home_24"
+        android:enabled="true"
         android:title="홈" />
 
     <item
         android:id="@+id/menu_search"
-        android:icon="@drawable/search"
+        android:icon="@drawable/baseline_search_24"
+        android:enabled="true"
         android:title="검색" />
 
     <item
+        android:id="@+id/menu_smallgroups"
+        android:icon="@drawable/baseline_groups_24"
+        android:enabled="true"
+        android:title="소모임" />
+
+    <item
         android:id="@+id/menu_reserve"
-        android:icon="@drawable/receipt"
-        android:title="예약" />
+        android:icon="@drawable/baseline_list_alt_24"
+        android:enabled="true"
+        android:title="나의 강좌" />
 
     <item
         android:id="@+id/menu_mypage"
-        android:icon="@drawable/mypage"
+        android:icon="@drawable/baseline_person_24"
+        android:enabled="true"
         android:title="마이페이지" />
 
 </menu>
