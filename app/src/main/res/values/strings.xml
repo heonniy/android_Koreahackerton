@@ -1,43 +1,46 @@
 <resources>
     <string name="app_name">dabaewo1</string>
-    <string-array name="spinner_year">
-        <item>2021</item>
-        <item>2020</item>
-        <item>2019</item>
-        <item>2018</item>
-        <item>2017</item>
-        <item>2016</item>
-        <item>2015</item>
+    <string-array name="groupTopics">
+        <item>어학</item>
+        <item>인문학</item>
+        <item>스마트</item>
+        <item>스포츠</item>
+        <item>미술</item>
+        <item>음악</item>
+        <item>직업</item>
+        <item>요리</item>
+        <item>취미</item>
     </string-array>
 
-    <string name ="num1">
+
+    <string name="num1">
         "😊 친절한강사님"
     </string>
-    <string name ="num2">
+    <string name="num2">
         "📖 전문성 있는강좌"
     </string>
-    <string name ="num3">
+    <string name="num3">
         "👌 초보자도 무리없음"
     </string>
-    <string name ="num4">
+    <string name="num4">
         "😍 상세한 커리큘럼"
     </string>
-    <string name ="num5">
+    <string name="num5">
         "🥍 준비물이 필요없음"
     </string>
-    <string name ="num6">
+    <string name="num6">
         "😄 유쾌한 분위기"
     </string>
-    <string name ="num7">
+    <string name="num7">
         "🙆🏻 ‍한번에 이해가능"
     </string>
-    <string name ="num8">
+    <string name="num8">
         "🖥️ 실무에 유용"
     </string>
-    <string name ="num9">
+    <string name="num9">
         "🏊🏻 몸이 건강해져요"
     </string>
-    <string name ="num10">
+    <string name="num10">
         "🤸🏻 다양한 사람들과"
     </string>
 
