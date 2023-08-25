@@ -99,152 +99,152 @@ public class MyrecyclerAdapter_lec extends RecyclerView.Adapter<MyrecyclerAdapte
                 } else if (category.equals("인문학 교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.book_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.book_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.book_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.book_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.book_5);
                             break;
 
                     }
                 } else if (category.equals("스마트 교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.smart_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.smart_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.smart_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.smart_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.smart_5);
                             break;
 
                     }
                 } else if (category.equals("스포츠교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.sports_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.sports_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.sports_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.sports_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.sports_5);
                             break;
 
                     }
                 } else if (category.equals("미술 교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.picture_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.picture_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.picture_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.picture_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.picture_5);
                             break;
 
                     }
                 } else if (category.equals("음악 교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.music_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.music_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.music_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.music_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.music_5);
                             break;
 
                     }
                 } else if (category.equals("직업 교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.job_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.job_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.job_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.job_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.job_5);
                             break;
 
                     }
                 } else if (category.equals("요리 교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.cooking_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.cooking_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.cooking_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.cooking_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.cooking_5);
                             break;
 
                     }
                 } else if (category.equals("취미 교실")) {
                     switch(picture){
                         case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
+                            lecture_image.setImageResource(R.drawable.hobby_1);
                             break;
                         case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
+                            lecture_image.setImageResource(R.drawable.hobby_2);
                             break;
                         case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
+                            lecture_image.setImageResource(R.drawable.hobby_3);
                             break;
                         case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
+                            lecture_image.setImageResource(R.drawable.hobby_4);
                             break;
                         case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
+                            lecture_image.setImageResource(R.drawable.hobby_5);
                             break;
 
                     }
