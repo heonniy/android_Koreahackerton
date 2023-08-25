@@ -74,25 +74,184 @@ public class MyrecyclerAdapter_lec extends RecyclerView.Adapter<MyrecyclerAdapte
 
 
            int picture = item.getPictureNumber();
+           String category = item.getLectureCategory();
+            if (category != null) {
+                if (category.equals("어학 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
 
-           switch(picture){
-               case 1:
-                   lecture_image.setImageResource(R.drawable.lan_1);
-                   break;
-               case 2:
-                   lecture_image.setImageResource(R.drawable.lan_2);
-                   break;
-               case 3:
-                   lecture_image.setImageResource(R.drawable.lan_3);
-                   break;
-               case 4:
-                   lecture_image.setImageResource(R.drawable.lan_4);
-                   break;
-               case 5:
-                   lecture_image.setImageResource(R.drawable.lan_5);
-                   break;
+                    }
 
-           }
+                } else if (category.equals("인문학 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                } else if (category.equals("스마트 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                } else if (category.equals("스포츠교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                } else if (category.equals("미술 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                } else if (category.equals("음악 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                } else if (category.equals("직업 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                } else if (category.equals("요리 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                } else if (category.equals("취미 교실")) {
+                    switch(picture){
+                        case 1:
+                            lecture_image.setImageResource(R.drawable.lan_1);
+                            break;
+                        case 2:
+                            lecture_image.setImageResource(R.drawable.lan_2);
+                            break;
+                        case 3:
+                            lecture_image.setImageResource(R.drawable.lan_3);
+                            break;
+                        case 4:
+                            lecture_image.setImageResource(R.drawable.lan_4);
+                            break;
+                        case 5:
+                            lecture_image.setImageResource(R.drawable.lan_5);
+                            break;
+
+                    }
+                }
+            }
+
+
 
             name.setText(item.getLectureName());
             location.setText(item.getLectureLocation());
