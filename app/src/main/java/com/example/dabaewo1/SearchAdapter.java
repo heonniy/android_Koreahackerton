@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
+import org.tensorflow.lite.Interpreter;
 import java.util.List;
 
 public class SearchAdapter extends BaseAdapter {
@@ -58,4 +58,31 @@ public class SearchAdapter extends BaseAdapter {
     class ViewHolder {
         TextView label;
     }
+    /*
+    try {
+        // tensorflow lite model 가져오기
+        Interpreter tflite = new Interpreter(loadModelFile());
+
+        // input값 형태 정의
+        int[] inputInts = {1, 2, 3, 4, 5}; // age, gender, interest, purpose, job으로 고쳐야 함.
+        float[][] inputVal = new float[1][5];
+        for (int i = 0; i < 5; i++) {
+            inputVal[0][i] = (float) inputInts[i];
+        }
+
+        // output값 형태 정의
+        float[][] outputVal = new float[1][4];
+
+        // tensorflow lite model 동작
+        tflite.run(inputVal, outputVal);
+
+        // float에서 int로 형변환
+        int[] outputInts = new int[4];
+        for (int i = 0; i < 4; i++) {
+            outputInts[i] = Math.round(outputVal[0][i]);
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    */
 }
