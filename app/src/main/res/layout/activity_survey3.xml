@@ -28,6 +28,7 @@
         android:layout_marginStart="34dp"
         android:fontFamily="@font/anibold"
         android:text="강좌이용 목적선택"
+        android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"

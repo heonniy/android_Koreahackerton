@@ -176,6 +176,7 @@
         android:text="직업군 선택"
         android:textSize="22sp"
         android:textStyle="normal"
+        android:textColor="@color/black"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

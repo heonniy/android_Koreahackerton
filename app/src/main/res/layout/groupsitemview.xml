@@ -152,18 +152,49 @@
         app:layout_constraintStart_toStartOf="@+id/imageView17" />
 
     <TextView
-        android:id="@+id/group_member"
-        android:layout_width="100dp"
+        android:id="@+id/current_group_member"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:fontFamily="@font/gmarketsansttfmedium"
-        android:text="5~7명"
+        android:text="1"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/group_member1"
+        app:layout_constraintTop_toTopOf="@+id/imageView17"/>
+
+    <TextView
+        android:id="@+id/slash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/gmarketsansttfmedium"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/current_group_member"
+        app:layout_constraintTop_toTopOf="@+id/imageView17"/>
+
+
+    <TextView
+        android:id="@+id/full_group_member"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/gmarketsansttfmedium"
+        android:text="5명"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/slash"
         app:layout_constraintTop_toTopOf="@+id/imageView17" />
 
     <TextView
