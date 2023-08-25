@@ -46,6 +46,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:22.1.0'
     implementation "com.google.android.gms:play-services-gcm:17.0.0"
     implementation 'com.android.support:design:33.0.0' // bottomNavigationView
-
-
+    implementation 'org.tensorflow:tensorflow-lite:0.+'
 }
