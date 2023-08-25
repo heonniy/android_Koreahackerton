@@ -5,37 +5,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragment.Lecture_detail">
 
+
     <ImageView
-        android:id="@+id/upside_1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/imageView27"
+        android:layout_width="368dp"
+        android:layout_height="158dp"
         android:contentDescription="TODO"
         android:src="@drawable/change_mypage"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="368:158"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="ContentDescription,HardcodedText" />
 
-
     <ImageView
         android:id="@+id/rec_1"
         android:layout_width="349dp"
-        android:layout_height="266dp"
+        android:layout_height="300dp"
         android:contentDescription="TODO"
         android:src="@drawable/rec_detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="368:158"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547"
+        app:layout_constraintVertical_bias="0.542"
         tools:ignore="ContentDescription,HardcodedText" />
+
 
     <TextView
         android:id="@+id/name_1"
@@ -47,13 +48,13 @@
         android:inputType="text"
         android:text="영문법 기초강의"
         android:textSize="20dp"
-        android:textStyle="normal"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.071"
+        app:layout_constraintVertical_bias="0.136"
         tools:ignore="TouchTargetSizeCheck" />
 
 
@@ -67,15 +68,13 @@
         android:inputType="text"
         android:text="접수기간 : "
         android:textSize="13sp"
-        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.239"
+        app:layout_constraintVertical_bias="0.275"
         tools:ignore="TouchTargetSizeCheck" />
-
 
     <TextView
         android:id="@+id/two_1"
@@ -96,6 +95,7 @@
         app:layout_constraintVertical_bias="0.386"
         tools:ignore="TouchTargetSizeCheck" />
 
+
     <TextView
         android:id="@+id/three_1"
         android:layout_width="wrap_content"
@@ -112,9 +112,8 @@
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.563"
+        app:layout_constraintVertical_bias="0.488"
         tools:ignore="TouchTargetSizeCheck" />
-
 
     <TextView
         android:id="@+id/three__"
@@ -129,10 +128,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.554"
+        app:layout_constraintVertical_bias="0.488"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -151,7 +150,7 @@
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.743"
+        app:layout_constraintVertical_bias="0.591"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -168,11 +167,37 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.903"
+        app:layout_constraintVertical_bias="0.694"
         tools:ignore="TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="452dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView27"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/lecture_pic" />
+
+    <ImageView
+        android:id="@+id/lecture_imagen"
+        android:layout_width="133dp"
+        android:layout_height="109dp"
+        app:layout_constraintBottom_toTopOf="@+id/rec_1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView25"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/imageView25"
+        app:layout_constraintTop_toTopOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.595" />
 
     <TextView
         android:id="@+id/real_term_1"
@@ -187,10 +212,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toEndOf="@+id/one_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.239"
+        app:layout_constraintVertical_bias="0.275"
         tools:ignore="TouchTargetSizeCheck" />
 
 
@@ -207,12 +232,11 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintHorizontal_bias="0.022"
         app:layout_constraintStart_toEndOf="@+id/two_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.394"
+        app:layout_constraintVertical_bias="0.386"
         tools:ignore="TouchTargetSizeCheck" />
-
 
     <TextView
         android:id="@+id/real_term_3"
@@ -227,10 +251,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintHorizontal_bias="0.351"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.558"
+        app:layout_constraintVertical_bias="0.488"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -246,10 +270,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.759"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.558"
+        app:layout_constraintVertical_bias="0.488"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -265,10 +289,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.739"
+        app:layout_constraintVertical_bias="0.591"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -284,10 +308,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"
         app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toEndOf="@+id/five_1"
         app:layout_constraintTop_toTopOf="@+id/rec_1"
-        app:layout_constraintVertical_bias="0.899"
+        app:layout_constraintVertical_bias="0.694"
         tools:ignore="TouchTargetSizeCheck" />
 
     <View
@@ -303,5 +327,30 @@
         app:layout_constraintStart_toStartOf="@+id/rec_1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.398" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_1"
+        app:layout_constraintEnd_toEndOf="@+id/rec_1"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="@+id/rec_1"
+        app:layout_constraintTop_toTopOf="@+id/rec_1"
+        app:layout_constraintVertical_bias="0.875"
+        app:srcCompat="@drawable/search_sub" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aninormal"
+        android:text="예약"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+        app:layout_constraintEnd_toEndOf="@+id/imageView28"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
