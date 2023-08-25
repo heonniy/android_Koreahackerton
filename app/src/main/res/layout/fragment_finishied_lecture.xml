@@ -15,16 +15,13 @@
 
         <ImageView
             android:id="@+id/imageView13"
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
             android:src="@drawable/search_tangle"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView30"
@@ -40,14 +37,14 @@
             android:id="@+id/reserve_back"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="#00ff0000"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
 
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
+            android:background="#00ff0000"
             android:scaleType="centerCrop"
             android:src="@drawable/reserve_back"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13" />
 
         <TextView
             android:id="@+id/reserve_text1"
@@ -68,7 +65,7 @@
 
         <ImageView
             android:id="@+id/finishedlecture1"
-            android:layout_width="340dp"
+            android:layout_width="305dp"
             android:layout_height="150dp"
             android:src="@drawable/finishedlecture1"
 
@@ -78,11 +75,10 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
         <ImageView
-            android:layout_width="340dp"
+            android:layout_width="305dp"
             android:layout_height="150dp"
             android:src="@drawable/finishedlecture2"
 
-            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/finishedlecture1" />

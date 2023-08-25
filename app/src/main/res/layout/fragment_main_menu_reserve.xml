@@ -9,14 +9,14 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".fragment.MainMenuReserveFragment">
 
 
         <ImageView
             android:id="@+id/imageView13"
-            android:layout_width="386dp"
-            android:layout_height="220dp"
+            android:layout_width="360dp"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:src="@drawable/change_mypage"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -37,8 +37,8 @@
 
         <ImageView
             android:id="@+id/imageView26"
-            android:layout_width="340dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
 
             android:src="@drawable/reserveprofile_background"
             app:layout_constraintBottom_toBottomOf="@+id/imageView13"
@@ -52,7 +52,7 @@
             android:id="@+id/imageView29"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:layout_marginStart="-200dp"
+            android:layout_marginStart="-170dp"
 
             android:src="@drawable/reserve_profile"
             app:layout_constraintBottom_toBottomOf="@+id/imageView26"
@@ -64,7 +64,7 @@
             android:id="@+id/reserve_name"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="14dp"
             android:layout_marginTop="24dp"
 
             android:text="권지용님의"
@@ -77,12 +77,12 @@
             android:id="@+id/reserve_text1"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="14dp"
             android:layout_marginTop="4dp"
 
             android:fontFamily="@font/gmarketsansttfbold"
             android:text="평생 교육 수강현황"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@+id/imageView29"
             app:layout_constraintTop_toBottomOf="@+id/reserve_name" />
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-2dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginEnd="35dp"
             android:background="#00ff0000"
             android:fontFamily="@font/gmarketsansttfbold"
             android:text="수강완료강의 보기 ->"
@@ -116,7 +116,7 @@
 
         <ImageView
             android:id="@+id/reserve_lecture1"
-            android:layout_width="340dp"
+            android:layout_width="305dp"
             android:layout_height="150dp"
             android:layout_marginTop="2dp"
 
@@ -128,9 +128,8 @@
 
         <ImageView
             android:id="@+id/reserve_lecture2"
-            android:layout_width="340dp"
+            android:layout_width="305dp"
             android:layout_height="150dp"
-            android:layout_marginTop="10dp"
 
             android:src="@drawable/reserve_lecture2"
             app:layout_constraintEnd_toEndOf="parent"
