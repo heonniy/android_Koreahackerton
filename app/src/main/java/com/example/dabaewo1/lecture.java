@@ -41,6 +41,9 @@ public class lecture {
     @PropertyName("teacher_name")
     public String teacherName;
 
+    @PropertyName("picture_num")
+    public int pictureNumber;
+
     public lecture() {
         // 기본 생성자
     }public lecture(String lectureName, String lectureLocation, String lectureCategory, int lectureReco) {
@@ -48,6 +51,13 @@ public class lecture {
     }
 
     // Getter와 Setter 메서드를 정의합니다.
+    public int getPictureNumber() {
+        return pictureNumber;
+    }
+
+    public void setPictureNumber(int pictureNumber) {
+        this.pictureNumber = pictureNumber;
+    }
 
     public int getEverageScore() {
         return everageScore;
