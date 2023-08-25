@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:padding="16dp">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -42,9 +42,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/namefield"
-            android:layout_width="110dp"
+            android:layout_width="120dp"
             android:layout_height="65dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="160dp"
             android:hint="김한국"
             app:endIconMode="none"
@@ -64,7 +64,6 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
             android:fontFamily="@font/aninormal"
             android:text="별명"
 
@@ -72,14 +71,14 @@
             android:textStyle="normal|bold"
             app:layout_constraintBottom_toTopOf="@+id/nicknamefield"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.45"
-            app:layout_constraintStart_toEndOf="@+id/nickname"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="@+id/nicknamefield"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nicknamefield"
-            android:layout_width="110dp"
+            android:layout_width="120dp"
             android:layout_height="65dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="160dp"
@@ -101,10 +100,11 @@
             android:id="@+id/nickname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/aninormal"
             android:text="이름"
-            android:textSize="15sp"
 
+            android:textSize="15sp"
             android:textStyle="normal|bold"
             app:layout_constraintBottom_toTopOf="@+id/namefield"
             app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +115,7 @@
             android:id="@+id/nickname3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/aninormal"
             android:text="아이디"
 
@@ -129,8 +129,9 @@
             android:id="@+id/nickname6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/aninormal"
+            android:layout_marginStart="10dp"
 
+            android:fontFamily="@font/aninormal"
             android:text="비밀번호"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -143,7 +144,7 @@
             android:id="@+id/age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
 
             android:fontFamily="@font/aninormal"
             android:text="나이"
@@ -154,9 +155,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/agefield"
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="65dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="250dp"
             android:hint="56"
             app:endIconMode="none"
@@ -179,7 +180,7 @@
             android:id="@+id/nickname7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/aninormal"
             android:text="성별"
 
@@ -190,9 +191,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/gender"
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="65dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="345dp"
             android:hint="ex)남/여 입력"
             app:endIconMode="none"
@@ -214,9 +215,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_id_Field"
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="65dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="440dp"
             android:hint="Cppva"
             app:endIconMode="none"
@@ -236,9 +237,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_pw_field"
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="65dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="530dp"
             android:hint="12**"
             app:endIconMode="password_toggle"
@@ -258,9 +259,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_mail_Field"
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="67dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="620dp"
             android:hint="abc123@naver.com"
             app:endIconMode="none"
@@ -282,7 +283,7 @@
             android:id="@+id/mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="280dp"
 
             android:fontFamily="@font/aninormal"
@@ -297,9 +298,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_telefield"
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="65dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="720dp"
             android:hint="010-1234-5678"
             app:endIconMode="none"
@@ -321,7 +322,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/aninormal"
             android:maxLines="1"
             android:text="주소"
@@ -335,7 +336,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/aninormal"
             android:maxLines="1"
             android:text="전화번호"
@@ -347,9 +348,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_add_field"
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="65dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="815dp"
             android:hint="울산시 울주군"
             app:endIconMode="none"
