@@ -389,6 +389,8 @@
             android:fontFamily="@font/aninormal"
             android:hint="검색어를 입력하세요"
             android:textSize="10sp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
             app:layout_constraintBottom_toBottomOf="@+id/search_top"
             app:layout_constraintEnd_toEndOf="@+id/search_top"
             app:layout_constraintHorizontal_bias="0.075"
