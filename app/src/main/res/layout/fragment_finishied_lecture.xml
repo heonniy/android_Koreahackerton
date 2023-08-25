@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.finished_lectureFragment">
+
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search_tangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="100dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_height="100dp"
+            android:src="@drawable/reserve_img"
+            app:layout_constraintEnd_toEndOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@id/imageView13" />
+
+        <ImageButton
+            android:id="@+id/reserve_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="#00ff0000"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/reserve_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reserve_text1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:text="수강 완료 강의"
+            android:textColor="@color/white"
+
+            android:textSize="20sp"
+            android:layout_marginStart="80dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13"
+            app:layout_constraintVertical_bias="0.786" />
+
+        <ImageView
+            android:id="@+id/finishedlecture1"
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:src="@drawable/finishedlecture1"
+
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:src="@drawable/finishedlecture2"
+
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/finishedlecture1" />
+        
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
