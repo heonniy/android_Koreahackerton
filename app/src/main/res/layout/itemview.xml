@@ -2,14 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="235dp"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
+
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="350dp"
-        android:layout_height="222dp"
+        android:layout_width="285dp"
+        android:layout_height="154dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="3dp"
         android:layout_marginEnd="35dp"
@@ -17,70 +18,111 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lectureform1" />
-
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/item_list" />
 
     <ImageView
         android:id="@+id/lecture_image"
-        android:layout_width="370dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
 
     <TextView
         android:id="@+id/lecture_name"
-        android:layout_width="250dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/aninormal"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:text="영어가르키기 강좌"
 
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lecture_image" />
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lecture"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/lecture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aninormal"
+        android:text="강좌 :"
+
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/lecture_image"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/lecture2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/aninormal"
+
+        android:text="센터 :"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toEndOf="@+id/lecture_image"
+        app:layout_constraintTop_toBottomOf="@+id/lecture" />
 
     <TextView
         android:id="@+id/lecture_location"
-        android:layout_width="350dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="35dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/aninormal"
-        android:textColor="@color/black"
-
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lecture_name" />
+        android:text="대구문화센터"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/lecture2"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_name" />
 
     <ImageView
         android:id="@+id/lecture_recommend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="71dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/lecture_image"
         app:srcCompat="@drawable/recommendform" />
 
     <TextView
         android:id="@+id/lecture_recommend_text"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="40dp"
-    android:fontFamily="@font/aninormal"
-    android:textSize="18sp"
-    app:layout_constraintBottom_toBottomOf="@+id/lecture_recommend"
-    app:layout_constraintStart_toEndOf="@+id/lecture_name"
-    app:layout_constraintTop_toTopOf="@+id/lecture_recommend" />
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/aninormal"
+        android:text="32"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lecture_recommend"
+        app:layout_constraintEnd_toEndOf="@+id/lecture_recommend"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="@+id/lecture_recommend"
+        app:layout_constraintTop_toTopOf="@+id/lecture_recommend"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
