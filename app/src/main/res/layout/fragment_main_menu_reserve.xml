@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
+    android:id="@+id/reservescreen"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragment.MainMenuMypageFragment">
+        tools:context=".fragment.MainMenuReserveFragment">
 
 
         <ImageView
@@ -139,4 +140,4 @@
             app:layout_constraintTop_toBottomOf="@+id/reserve_lecture1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</LinearLayout>
