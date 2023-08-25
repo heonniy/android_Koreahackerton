@@ -230,24 +230,7 @@ public class MyrecyclerAdapter_lec extends RecyclerView.Adapter<MyrecyclerAdapte
 
                     }
                 } else if (category.equals("취미 교실")) {
-                    switch(picture){
-                        case 1:
-                            lecture_image.setImageResource(R.drawable.lan_1);
-                            break;
-                        case 2:
-                            lecture_image.setImageResource(R.drawable.lan_2);
-                            break;
-                        case 3:
-                            lecture_image.setImageResource(R.drawable.lan_3);
-                            break;
-                        case 4:
-                            lecture_image.setImageResource(R.drawable.lan_4);
-                            break;
-                        case 5:
-                            lecture_image.setImageResource(R.drawable.lan_5);
-                            break;
-
-                    }
+                    lecture_image.setImageResource(R.drawable.hobb_list);
                 }
             }
 
