@@ -66,6 +66,7 @@ public class MainMenuSearchFragment extends Fragment {
         });
 
 
+
         // LinearLayoutManager 설정
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(layoutManager);

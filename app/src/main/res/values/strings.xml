@@ -9,6 +9,38 @@
         <item>2016</item>
         <item>2015</item>
     </string-array>
+
+    <string name ="num1">
+        "😊 친절한강사님"
+    </string>
+    <string name ="num2">
+        "📖 전문성 있는강좌"
+    </string>
+    <string name ="num3">
+        "👌 초보자도 무리없음"
+    </string>
+    <string name ="num4">
+        "😍 상세한 커리큘럼"
+    </string>
+    <string name ="num5">
+        "🥍 준비물이 필요없음"
+    </string>
+    <string name ="num6">
+        "😄 유쾌한 분위기"
+    </string>
+    <string name ="num7">
+        "🙆🏻 ‍한번에 이해가능"
+    </string>
+    <string name ="num8">
+        "🖥️ 실무에 유용"
+    </string>
+    <string name ="num9">
+        "🏊🏻 몸이 건강해져요"
+    </string>
+    <string name ="num10">
+        "🤸🏻 다양한 사람들과"
+    </string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
