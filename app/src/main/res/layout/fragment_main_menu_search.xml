@@ -55,7 +55,7 @@
             app:layout_constraintHorizontal_bias="0.139"
             app:layout_constraintStart_toStartOf="@+id/imageView14"
             app:layout_constraintTop_toTopOf="@+id/imageView14"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
         <TextView
@@ -90,7 +90,7 @@
             app:layout_constraintHorizontal_bias="0.291"
             app:layout_constraintStart_toEndOf="@+id/book_1"
             app:layout_constraintTop_toTopOf="@+id/imageView14"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
         <TextView
@@ -125,7 +125,7 @@
             app:layout_constraintHorizontal_bias="0.573"
             app:layout_constraintStart_toEndOf="@+id/reading_1"
             app:layout_constraintTop_toTopOf="@+id/imageView14"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView13"
@@ -158,7 +158,7 @@
             app:layout_constraintHorizontal_bias="0.139"
             app:layout_constraintStart_toStartOf="@+id/imageView14"
             app:layout_constraintTop_toBottomOf="@+id/textView11"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView14"
@@ -192,7 +192,7 @@
             app:layout_constraintHorizontal_bias="0.291"
             app:layout_constraintStart_toEndOf="@+id/sports_1"
             app:layout_constraintTop_toBottomOf="@+id/textView12"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
         <TextView
@@ -227,7 +227,7 @@
             app:layout_constraintHorizontal_bias="0.573"
             app:layout_constraintStart_toEndOf="@+id/painting_1"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView17"
@@ -262,7 +262,7 @@
             app:layout_constraintStart_toStartOf="@+id/imageView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14"
             app:layout_constraintVertical_bias="0.0"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -296,7 +296,7 @@
             app:layout_constraintStart_toEndOf="@+id/job_1"
             app:layout_constraintTop_toBottomOf="@+id/textView17"
             app:layout_constraintVertical_bias="0.508"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView18"
@@ -331,7 +331,7 @@
             app:layout_constraintHorizontal_bias="0.573"
             app:layout_constraintStart_toEndOf="@+id/cooking_1"
             app:layout_constraintTop_toBottomOf="@+id/textView17"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView16"

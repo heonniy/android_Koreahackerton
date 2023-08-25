@@ -94,6 +94,119 @@ public class MainMenuSearchFragment extends Fragment {
             }
         });
 
+        rootView.findViewById(R.id.reading_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchlearningFragment = new Search_learningFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchlearningFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+
+        rootView.findViewById(R.id.smart_learn_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchsmartlearnFragment = new Search_smartlearnFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchsmartlearnFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+
+        rootView.findViewById(R.id.smart_learn_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchsmartlearnFragment = new Search_smartlearnFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchsmartlearnFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+
+        rootView.findViewById(R.id.sports_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchsportsFragment = new Search_sportsFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchsportsFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+
+        rootView.findViewById(R.id.painting_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchpaintingFragment = new Search_paintingFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchpaintingFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+
+        rootView.findViewById(R.id.music_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchpmusicFragment = new Search_musicFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchpmusicFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+        rootView.findViewById(R.id.job_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchpjobFragment = new Search_jobFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchpjobFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+        rootView.findViewById(R.id.cooking_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchpcookingFragment = new Search_cookingFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchpcookingFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+        rootView.findViewById(R.id.chess_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Search_languageFragment로 이동하는 코드 추가
+                Fragment searchhobbyFragment = new Search_hobbyFragment(); // 이동할 프래그먼트 인스턴스 생성
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.menu_frame_layout, searchhobbyFragment); // 프래그먼트 교체
+                transaction.addToBackStack(null); // Back 버튼으로 이전 프래그먼트로 돌아갈 수 있도록 스택에 추가
+                transaction.commit();
+            }
+        });
+
+
         return rootView;
 
 
