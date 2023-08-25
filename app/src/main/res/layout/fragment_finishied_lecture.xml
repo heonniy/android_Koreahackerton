@@ -42,8 +42,8 @@
             android:layout_height="25dp"
             android:background="#00ff0000"
 
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
             android:scaleType="centerCrop"
             android:src="@drawable/reserve_back"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,8 +68,8 @@
 
         <ImageView
             android:id="@+id/finishedlecture1"
-            android:layout_width="360dp"
-            android:layout_height="160dp"
+            android:layout_width="340dp"
+            android:layout_height="150dp"
             android:src="@drawable/finishedlecture1"
 
             android:layout_marginTop="20dp"
@@ -78,8 +78,8 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
         <ImageView
-            android:layout_width="360dp"
-            android:layout_height="160dp"
+            android:layout_width="340dp"
+            android:layout_height="150dp"
             android:src="@drawable/finishedlecture2"
 
             android:layout_marginTop="10dp"
