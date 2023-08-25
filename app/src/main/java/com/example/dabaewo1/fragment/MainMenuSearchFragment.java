@@ -1,6 +1,8 @@
 package com.example.dabaewo1.fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -23,13 +25,25 @@ import com.example.dabaewo1.R;
 import com.example.dabaewo1.lecture;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.tensorflow.lite.Interpreter;
+
+import java.io.*;
+import java.nio.ByteBuffer;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Scanner;
 
 
 public class MainMenuSearchFragment extends Fragment {
@@ -41,9 +55,12 @@ public class MainMenuSearchFragment extends Fragment {
     private static final String KEY_SAVED_TEXT = "saved_text"; // 텍스트를 저장할 키 이름
     private static final String PREF_NAME = "my_preferences"; // SharedPreferences 파일의 이름
 
-
     private EditText searchContext;
-
+    private int age;
+    private int gender;
+    private int interest;
+    private int job;
+    private int purpose;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -206,17 +223,127 @@ public class MainMenuSearchFragment extends Fragment {
             }
         });
 
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            String uid = user.getUid();
+            db.collection("users")
+                    .document(uid)
+                    .get()
+                    .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                            if (task.isSuccessful()) {
+                                DocumentSnapshot document = task.getResult();
+                                if (document.exists()) {
+                                    age = document.getLong("age").intValue(); // age 필드가 Long 타입일 경우
+                                    gender = 0; // 기본값으로 설정
+                                    String genderStr = document.getString("gender");
+                                    if (genderStr != null) {
+                                        if (genderStr.equals("man") || genderStr.equals("남")) {
+                                            gender = 0; // 남성
+                                        } else {
+                                            gender = 1; // 여성
+                                        }
+                                    }
+                                    interest = document.getLong("interest").intValue();
+                                    job = document.getLong("job").intValue();
+                                    purpose = document.getLong("purpose").intValue();
+                                }
+                            }
+                        }
+                    });
+        }
+        Interpreter interpreter;
+        try {
+            ByteBuffer modelBuffer = loadModelFile(getActivity().getAssets(), "model.tflite");
+            interpreter = new Interpreter(modelBuffer);
 
+            // 추론 실행 예시
+            float[] input = {age, gender, job, interest, purpose};// 입력 데이터 생성
+            float[][] output = new float[1][5]; // 모델 출력의 형태에 따라 적절한 크기로 변경
+            interpreter.run(input, output);
+
+            double[] mean = {47.28023507578101, 47.29260748530776, 47.381688833900405, 47.340241261985774, 47.28116300649552};
+            double[] std = {26.081805016428966, 25.98556811786256, 26.02537672934598, 25.9913455144149, 25.97402919661105};
+
+            // 역정규화
+            double[] denormalizedOutput = new double[5];
+            for (int i = 0; i < 5; i++) {
+                denormalizedOutput[i] = (output[0][i] * std[i]) + mean[i];
+            }
+
+            int[] result= roundDecimalArray(denormalizedOutput);
+            // 역정규화된 결과 사용
+            StringBuilder arrayContents = new StringBuilder();
+            for (int value : result) {
+                arrayContents.append(value).append(", ");
+            }
+
+            Log.d("Tag", "Denormalized array contents: " + arrayContents.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return rootView;
 
-
-
-
-
-
-
-
     }
+
+    private ByteBuffer loadModelFile(AssetManager assetManager, String modelPath) throws IOException {
+        InputStream inputStream = assetManager.open(modelPath);
+        int modelFileSize = inputStream.available();
+        ByteBuffer modelBuffer = ByteBuffer.allocateDirect(modelFileSize);
+        byte[] buffer = new byte[modelFileSize];
+        inputStream.read(buffer);
+        modelBuffer.put(buffer);
+        inputStream.close();
+        modelBuffer.rewind();
+        return modelBuffer;
+    }
+    public static int[] roundDecimalArray(double[] inputArray) {
+        int[] roundedArray = new int[inputArray.length];
+        for (int i = 0; i < inputArray.length; i++) {
+            roundedArray[i] = (int) Math.round(inputArray[i]);
+        }
+
+        while (true) {
+            boolean hasDuplicates = false;
+
+            for (int i = 0; i < roundedArray.length; i++) {
+                int count = 0;
+                for (int j = 0; j < roundedArray.length; j++) {
+                    if (roundedArray[j] == roundedArray[i]) {
+                        count++;
+                    }
+                }
+
+                if (count > 1) {
+                    roundedArray[i] = roundedArray[i] + 1;
+                    hasDuplicates = true;
+                }
+            }
+
+            if (!hasDuplicates) {
+                break;
+            }
+        }
+
+        return roundedArray;
+    }
+    public String loadJsonFromAsset(String filename) {
+        String json = null;
+        try {
+            InputStream is = getActivity().getAssets().open(filename);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return json;
+    }
+
+
 
 
     private void saveTextFromEditText() {
