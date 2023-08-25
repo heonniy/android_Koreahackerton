@@ -265,7 +265,7 @@
         android:fontFamily="@font/aninormal"
         android:imeOptions="actionDone"
         android:inputType="text"
-        android:text="10:00 ~ 12:00"
+        android:text="10:00 ~ 12"
         android:textSize="13sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rec_1"

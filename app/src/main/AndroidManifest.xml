@@ -41,6 +41,9 @@
             android:name=".searchAddress"
             android:exported="false" />
         <activity android:name=".login2" />
+
+
+
         <activity
             android:name=".fragment.MainMenuActivity"
             android:exported="false" />

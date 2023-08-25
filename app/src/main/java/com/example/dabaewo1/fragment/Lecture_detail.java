@@ -24,109 +24,53 @@ import com.example.dabaewo1.R;
 
 import org.w3c.dom.Text;
 
+
 public class Lecture_detail extends Fragment {
 
-    private FirebaseAuth mAuth;
-    private FirebaseFirestore db;
     private TextView usernameTextView;
     private TextView lecture_day;
     private TextView start_day;
     private TextView end_day;
     private TextView where_1;
     private TextView howmuch;
+    private TextView want_day;
+
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup)inflater.inflate(R.layout.fragment_lecture_detail, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_lecture_detail, container, false);
 
-        mAuth = FirebaseAuth.getInstance();
-        db = FirebaseFirestore.getInstance();
-        usernameTextView = rootView.findViewById(R.id.real_term_1);
+        usernameTextView = rootView.findViewById(R.id.name_1);
         lecture_day = rootView.findViewById(R.id.real_term_2);
+        want_day = rootView.findViewById(R.id.real_term_1);
         start_day = rootView.findViewById(R.id.real_term_3);
         end_day = rootView.findViewById(R.id.real_term_7);
         where_1 = rootView.findViewById(R.id.real_term_4);
         howmuch = rootView.findViewById(R.id.real_term_5);
 
+        Bundle args = getArguments();
+        if (args != null) {
+            String lectureName = args.getString("lectureName");
+            String lecturewant = args.getString("lectureWant");
+            String lectureAddress = args.getString("lectureAddress");
+            String lectureDay = args.getString("lectureDay");
+            String lectureStartTime = args.getString("lectureStartTime");
+            String lectureEndTime = args.getString("lectureEndTime");
+            int lectureFee = args.getInt("lectureFee", 0);
 
-        int a=101;
-
-
-        if(a>=100)
-        {
-            db.collection("ulsan")
-                    .document(String.valueOf(a))
-                    .get()
-                    .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                            if (task.isSuccessful()) {
-                                DocumentSnapshot document = task.getResult();
-                                if (document.exists()) {
-                                    String username = document.getString("lecture_submitenddate"); // "name"은 해당 필드의 이름
-                                    usernameTextView.setText(username);
-                                    String nickname = document.getString("lecture_day");
-                                    lecture_day.setText(nickname);
-                                    String phone = document.getString("lecture_starttime");
-                                    start_day.setText(phone);
-                                    String phone1 = document.getString("lecture_endtime");
-                                    end_day.setText(phone1);
-                                    String address = document.getString("lecture_address");
-                                    where_1.setText(address);
-                                    long feeL = document.getLong("lecture_fee");
-                                    int fee = (int) feeL;
-                                    howmuch.setText(String.valueOf(fee));
-
-
-
-
-                                }
-                            }
-                        }
-                    });
+            // 정보 설정
+            usernameTextView.setText(lectureName);
+            want_day.setText(lecturewant);
+            lecture_day.setText(lectureDay);
+            start_day.setText(lectureStartTime);
+            end_day.setText(lectureEndTime);
+            where_1.setText(lectureAddress);
+            howmuch.setText(String.valueOf(lectureFee));
         }
-        else {
-            db.collection("daegu")
-                    .document(String.valueOf(a))
-                    .get()
-                    .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                            if (task.isSuccessful()) {
-                                DocumentSnapshot document = task.getResult();
-                                if (document.exists()) {
-                                    String username = document.getString("lecture_submitenddate"); // "name"은 해당 필드의 이름
-                                    usernameTextView.setText(username);
-                                    String nickname = document.getString("lecture_day");
-                                    lecture_day.setText(nickname);
-                                    String phone = document.getString("lecture_starttime");
-                                    start_day.setText(phone);
-                                    String phone1 = document.getString("lecture_endtime");
-                                    end_day.setText(phone1);
-                                    String address = document.getString("lecture_address");
-                                    where_1.setText(address);
-                                    long feeL = document.getLong("lecture_fee");
-                                    int fee = (int) feeL;
-                                    howmuch.setText(String.valueOf(fee));
-
-
-
-
-
-                                }
-                            }
-                        }
-                    });
-        }
-
-
 
         return rootView;
-
-
-
-
     }
+
 }

@@ -6,9 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.widget.Toast;
+import android.content.Intent;
+import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
+
+
+import com.example.dabaewo1.fragment.Lecture_detail;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,12 +72,41 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
             lecture_image = itemView.findViewById(R.id.lecture_image);
             name = itemView.findViewById(R.id.lecture_name);
             location = itemView.findViewById(R.id.lecture_location);
-            recommend = itemView.findViewById(R.id.lecture_recommend_text); // 수정
+            recommend = itemView.findViewById(R.id.lecture_recommend_text);
             keyword1 = itemView.findViewById(R.id.keyword_top1);
             keyword2 = itemView.findViewById(R.id.keyword_top2);
             keyword3 = itemView.findViewById(R.id.keyword_top3);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION) {
+                        lecture clickedLecture = mFriendList.get(position);
+
+                        Bundle bundle = new Bundle();
+                        bundle.putString("lectureName", clickedLecture.getLectureName());
+                        bundle.putString("lectureWant", clickedLecture.getLectureSubmitEndDate());
+                        bundle.putString("lectureAddress", clickedLecture.getLectureAddress());
+                        bundle.putString("lectureDay", clickedLecture.getLectureDay());
+                        bundle.putString("lectureStartTime", clickedLecture.getLectureStartTime());
+                        bundle.putString("lectureEndTime", clickedLecture.getLectureEndTime());
+                        bundle.putInt("lectureFee", clickedLecture.getLectureFee());
+
+                        FragmentManager fragmentManager = ((AppCompatActivity) itemView.getContext()).getSupportFragmentManager();
+                        Lecture_detail lectureDetailFragment = new Lecture_detail();
+                        lectureDetailFragment.setArguments(bundle);
+
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.menu_frame_layout, lectureDetailFragment) // R.id.fragment_container는 강좌 상세 프래그먼트를 표시할 프래그먼트 컨테이너 뷰의 ID입니다.
+                                .addToBackStack(null)
+                                .commit();
+                    }
+                }
+            });
         }
+
+
         void onBind(lecture item){
 
             String category = item.getLectureCategory();
