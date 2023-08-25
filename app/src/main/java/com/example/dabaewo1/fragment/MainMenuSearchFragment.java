@@ -1,16 +1,23 @@
 package com.example.dabaewo1.fragment;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import android.util.Log;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
+import com.example.dabaewo1.fragment.*;
 import com.example.dabaewo1.MyRecyclerAdapter;
 import com.example.dabaewo1.R;
 import com.example.dabaewo1.lecture;
@@ -23,11 +30,19 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class MainMenuSearchFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private MyRecyclerAdapter mRecyclerAdapter;
     private ArrayList<lecture> mLectureList = new ArrayList<>();
     private FirebaseFirestore db; // Firestore 인스턴스
+
+    private static final String KEY_SAVED_TEXT = "saved_text"; // 텍스트를 저장할 키 이름
+    private static final String PREF_NAME = "my_preferences"; // SharedPreferences 파일의 이름
+
+
+    private EditText searchContext;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +50,21 @@ public class MainMenuSearchFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main_menu_search, container, false);
 
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
+
+        searchContext = rootView.findViewById(R.id.search_context);
+
+        searchContext.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE || (event != null &&
+                        event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
+                    saveTextFromEditText();
+                    return true;
+                }
+                return false;
+            }
+        });
+
 
         // LinearLayoutManager 설정
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
@@ -64,6 +94,29 @@ public class MainMenuSearchFragment extends Fragment {
         });
 
         return rootView;
+
+
+
+
+
+
+
+
+    }
+
+
+    private void saveTextFromEditText() {
+        String abc = searchContext.getText().toString();
+        saveTextToSharedPreferences(abc);
+    }
+
+    private void saveTextToSharedPreferences(String text) {
+        Context context = requireContext();
+        SharedPreferences sharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_SAVED_TEXT, text);
+        editor.apply();
+        Log.d("SaveTextToSharedPreferences", "Saved text: " + text); // 텍스트를 Logcat에 출력
     }
 
     private void fetchFirebaseData() {
@@ -90,4 +143,20 @@ public class MainMenuSearchFragment extends Fragment {
                     }
                 });
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

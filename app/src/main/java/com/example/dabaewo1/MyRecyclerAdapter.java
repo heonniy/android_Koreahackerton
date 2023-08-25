@@ -56,23 +56,23 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
             String category = item.getLectureCategory();
             if (category != null) {
                 if (category.equals("어학 교실")) {
-                    lecture_image.setImageResource(R.drawable.language_ii);
+                    lecture_image.setImageResource(R.drawable.lan_list);
                 } else if (category.equals("인문학 교실")) {
-                    lecture_image.setImageResource(R.drawable.book_ii);
+                    lecture_image.setImageResource(R.drawable.lec_list);
                 } else if (category.equals("스마트 교실")) {
-                    lecture_image.setImageResource(R.drawable.smart_ii);
+                    lecture_image.setImageResource(R.drawable.smart_list);
                 } else if (category.equals("스포츠교실")) {
-                    lecture_image.setImageResource(R.drawable.sport_ii);
+                    lecture_image.setImageResource(R.drawable.sport_list);
                 } else if (category.equals("미술 교실")) {
-                    lecture_image.setImageResource(R.drawable.picture_ii);
+                    lecture_image.setImageResource(R.drawable.picture_list);
                 } else if (category.equals("음악 교실")) {
-                    lecture_image.setImageResource(R.drawable.music_ii);
+                    lecture_image.setImageResource(R.drawable.music_list);
                 } else if (category.equals("직업 교실")) {
-                    lecture_image.setImageResource(R.drawable.job_ii);
+                    lecture_image.setImageResource(R.drawable.job_list);
                 } else if (category.equals("요리 교실")) {
-                    lecture_image.setImageResource(R.drawable.cooking_ii);
+                    lecture_image.setImageResource(R.drawable.cook_list);
                 } else if (category.equals("취미 교실")) {
-                    lecture_image.setImageResource(R.drawable.hobby_ii);
+                    lecture_image.setImageResource(R.drawable.hobb_list);
                 }
             }
             name.setText(item.getLectureName());
