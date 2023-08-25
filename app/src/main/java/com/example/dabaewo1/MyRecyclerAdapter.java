@@ -92,6 +92,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
                         bundle.putString("lectureStartTime", clickedLecture.getLectureStartTime());
                         bundle.putString("lectureEndTime", clickedLecture.getLectureEndTime());
                         bundle.putInt("lectureFee", clickedLecture.getLectureFee());
+                        bundle.putString("lectureCa", clickedLecture.getLectureCategory());
 
                         FragmentManager fragmentManager = ((AppCompatActivity) itemView.getContext()).getSupportFragmentManager();
                         Lecture_detail lectureDetailFragment = new Lecture_detail();
