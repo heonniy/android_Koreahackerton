@@ -13,6 +13,7 @@ import com.example.dabaewo1.fragment.MainMenuHomeFragment;
 import com.example.dabaewo1.fragment.MainMenuMypageFragment;
 import com.example.dabaewo1.fragment.MainMenuReserveFragment;
 import com.example.dabaewo1.fragment.MainMenuSearchFragment;
+import com.example.dabaewo1.fragment.MainMenuSmallgroupFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainMenuActivity extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class MainMenuActivity extends AppCompatActivity {
 
     private MainMenuHomeFragment fragmentHome = new MainMenuHomeFragment();
     private MainMenuSearchFragment fragmentSearch = new MainMenuSearchFragment();
+    private MainMenuSmallgroupFragment fragmentGroup = new MainMenuSmallgroupFragment();
     private MainMenuMypageFragment fragmentMypage = new MainMenuMypageFragment();
     private MainMenuReserveFragment fragmentReserve = new MainMenuReserveFragment();
 
@@ -48,6 +50,8 @@ public class MainMenuActivity extends AppCompatActivity {
                 transaction.replace(R.id.menu_frame_layout, fragmentHome).commitAllowingStateLoss();
             } else if (itemId == R.id.menu_search) {
                 transaction.replace(R.id.menu_frame_layout, fragmentSearch).commitAllowingStateLoss();
+            } else if (itemId == R.id.menu_smallgroups) {
+                transaction.replace(R.id.menu_frame_layout, fragmentGroup).commitAllowingStateLoss();
             } else if (itemId == R.id.menu_reserve) {
                 transaction.replace(R.id.menu_frame_layout, fragmentReserve).commitAllowingStateLoss();
             } else if (itemId == R.id.menu_mypage) {

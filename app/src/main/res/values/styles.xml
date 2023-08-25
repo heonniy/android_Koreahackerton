@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Widget.CustomBottomNavigationView"
-        parent="@style/Widget.Design.BottomNavigationView">
+    <style name="Widget.CustomBottomNavigationView" parent="@style/Widget.Design.BottomNavigationView">
         <item name="fontFamily">@font/aninormal</item>
         <item name="android:minHeight">0dp</item>
         <!-- 다른 속성들 -->
     </style>
 
-
+    <style name="Widget.Theme.Dabaewo1.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
 
 
 </resources>
