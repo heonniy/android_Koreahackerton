@@ -19,6 +19,8 @@ import android.util.Log;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+
 import com.example.dabaewo1.fragment.*;
 import com.example.dabaewo1.MyRecyclerAdapter;
 import com.example.dabaewo1.R;
@@ -61,6 +63,7 @@ public class MainMenuSearchFragment extends Fragment {
     private int interest;
     private int job;
     private int purpose;
+    int result[] = new int[5];
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -272,7 +275,7 @@ public class MainMenuSearchFragment extends Fragment {
                 denormalizedOutput[i] = (output[0][i] * std[i]) + mean[i];
             }
 
-            int[] result= roundDecimalArray(denormalizedOutput);
+
             // 역정규화된 결과 사용
             StringBuilder arrayContents = new StringBuilder();
             for (int value : result) {
@@ -369,8 +372,17 @@ public class MainMenuSearchFragment extends Fragment {
                         if (task.isSuccessful()) {
                             List<lecture> lectures = new ArrayList<>();
                             for (DocumentSnapshot document : task.getResult()) {
-                                lecture lecture1 = document.toObject(lecture.class);
-                                lectures.add(lecture1);
+                                // 파이어베이스 문서의 문서 번호를 가져옴
+                                String documentId = document.getId();
+
+                                // result 배열에 있는 문서 번호와 같으면 해당 문서를 추출하여 lectures에 추가
+                                for (int i = 0; i < result.length; i++) {
+                                    if (documentId.equals(String.valueOf(result[i]))) {
+                                        lecture lecture1 = document.toObject(lecture.class);
+                                        lectures.add(lecture1);
+                                        break; // 이미 해당 문서가 추가되었으므로 다음 문서로 넘어감
+                                    }
+                                }
                             }
 
                             // 어댑터에 데이터 설정 및 갱신
@@ -384,7 +396,6 @@ public class MainMenuSearchFragment extends Fragment {
                     }
                 });
     }
-
 
 
 

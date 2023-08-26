@@ -13,6 +13,22 @@
         android:layout_height="match_parent"
         tools:context=".fragment.MainMenuMypageFragment">
 
+        <TextView
+            android:id="@+id/address6"
+            android:layout_width="207dp"
+            android:layout_height="19dp"
+
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/anilight"
+            android:maxLines="1"
+            android:text="©CppVa 2023 Korea hackerton"
+
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rec_1" />
+
         <ImageView
             android:id="@+id/imageView27"
             android:layout_width="360dp"
@@ -43,16 +59,16 @@
             android:id="@+id/name_1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginTop="30dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:text="영문법 기초강의"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="16sp"
 
-            android:layout_marginTop="30dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/rec_1"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
             app:layout_constraintTop_toTopOf="@+id/rec_1"
@@ -63,16 +79,16 @@
             android:id="@+id/one_1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="65dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
-            android:textColor="@color/black"
             android:inputType="text"
             android:text="접수기간 : "
-            android:textSize="13sp"
 
-            android:layout_marginTop="65dp"
-            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
             app:layout_constraintTop_toTopOf="@+id/rec_1"
             tools:ignore="TouchTargetSizeCheck" />
@@ -81,17 +97,17 @@
             android:id="@+id/two_1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="97dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
-            android:textColor="@color/black"
             android:text="요일 : "
+            android:textColor="@color/black"
+
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="85dp"
-            android:layout_marginStart="10dp"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
             app:layout_constraintTop_toTopOf="@+id/rec_1"
             tools:ignore="TouchTargetSizeCheck" />
@@ -101,87 +117,67 @@
             android:id="@+id/three_1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
-            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:text="교육시간 : "
-            android:textSize="13sp"
-            android:textStyle="normal"
 
-            android:layout_marginTop="105dp"
-            android:layout_marginStart="10dp"
-            app:layout_constraintStart_toStartOf="@+id/rec_1"
-            app:layout_constraintTop_toTopOf="@+id/rec_1"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/three__"
-            android:layout_width="wrap_content"
-            android:layout_height="28dp"
             android:textColor="@color/black"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/aninormal"
-            android:imeOptions="actionDone"
-            android:inputType="text"
-            android:text="-"
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="105dp"
-            android:layout_marginStart="160dp"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
-            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            app:layout_constraintTop_toBottomOf="@+id/two_1"
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/four_1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
-            android:textColor="@color/black"
             android:inputType="text"
             android:text="교육장소 : "
+            android:textColor="@color/black"
+
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="125dp"
-            android:layout_marginStart="10dp"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
-            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            app:layout_constraintTop_toBottomOf="@+id/five_1"
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/five_1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
-            android:layout_marginEnd="248dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
-            android:textColor="@color/black"
             android:text="수강료 : "
+
+            android:textColor="@color/black"
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="145dp"
-            android:layout_marginStart="10dp"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
-            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            app:layout_constraintTop_toBottomOf="@+id/three_1"
             tools:ignore="TouchTargetSizeCheck" />
 
 
         <ImageView
             android:id="@+id/imageView25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginTop="50dp"
+
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="@+id/imageView27"
             app:layout_constraintStart_toStartOf="@+id/imageView27"
             app:layout_constraintTop_toTopOf="@+id/imageView27"
@@ -189,8 +185,8 @@
 
         <ImageView
             android:id="@+id/lecture_imagen"
-            android:layout_width="130dp"
-            android:layout_height="100dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
 
             app:layout_constraintBottom_toBottomOf="@+id/imageView25"
             app:layout_constraintEnd_toEndOf="@+id/imageView25"
@@ -201,17 +197,17 @@
             android:id="@+id/real_term_1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="65dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:text="2023-07-17"
             android:textColor="@color/black"
+
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="65dp"
-            android:layout_marginStart="73dp"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
             app:layout_constraintTop_toTopOf="@+id/rec_1"
             tools:ignore="TouchTargetSizeCheck" />
@@ -221,16 +217,16 @@
             android:id="@+id/real_term_2"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="97dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:text="수,금"
+
             android:textColor="@color/black"
             android:textSize="13sp"
-
-            android:layout_marginTop="85dp"
-            android:layout_marginStart="50dp"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
             app:layout_constraintTop_toTopOf="@+id/rec_1"
             tools:ignore="TouchTargetSizeCheck" />
@@ -239,37 +235,36 @@
             android:id="@+id/real_term_3"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginTop="38dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
-            android:textColor="@color/black"
             android:inputType="text"
             android:text="10:00 ~ 12:00"
+
+            android:textColor="@color/black"
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="105dp"
-            android:layout_marginStart="70dp"
-            app:layout_constraintStart_toStartOf="@+id/rec_1"
-            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            app:layout_constraintStart_toEndOf="@+id/three_1"
+            app:layout_constraintTop_toBottomOf="@+id/real_term_1"
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/real_term_7"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
-            android:textColor="@color/black"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="130dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:text="10:00 ~ 12"
+            android:textColor="@color/black"
+
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="105dp"
-            android:layout_marginStart="168dp"
-            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintStart_toEndOf="@+id/real_term_3"
             app:layout_constraintTop_toTopOf="@+id/rec_1"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -277,38 +272,36 @@
             android:id="@+id/real_term_4"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginTop="5dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
-            android:textColor="@color/black"
             android:inputType="text"
             android:text="동대구역"
+
+            android:textColor="@color/black"
             android:textSize="13sp"
             android:textStyle="normal"
-
-            android:layout_marginTop="125dp"
-            android:layout_marginStart="72dp"
-            app:layout_constraintStart_toStartOf="@+id/rec_1"
-            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            app:layout_constraintStart_toEndOf="@+id/four_1"
+            app:layout_constraintTop_toBottomOf="@+id/real_term_5"
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/real_term_5"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
-            android:layout_marginTop="145dp"
+            android:layout_marginTop="10dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/aninormal"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:text="20000만원"
+
             android:textColor="@color/black"
             android:textSize="13sp"
-
             android:textStyle="normal"
-            android:layout_marginStart="62dp"
-            app:layout_constraintStart_toStartOf="@+id/rec_1"
-            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            app:layout_constraintStart_toEndOf="@+id/five_1"
+            app:layout_constraintTop_toBottomOf="@+id/real_term_3"
             tools:ignore="TouchTargetSizeCheck" />
 
         <View
@@ -316,10 +309,10 @@
             android:layout_width="270dp"
             android:layout_height="1dp"
             android:layout_marginStart="14dp"
-            android:layout_marginEnd="15dp"
-            android:background="@color/black"
-
             android:layout_marginTop="55dp"
+            android:layout_marginEnd="15dp"
+
+            android:background="@color/black"
             app:layout_constraintEnd_toEndOf="@+id/rec_1"
             app:layout_constraintStart_toStartOf="@+id/rec_1"
             app:layout_constraintTop_toTopOf="@+id/rec_1" />
@@ -329,10 +322,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rec_1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rec_1"
             app:srcCompat="@drawable/search_sub" />
 
         <TextView
@@ -347,6 +340,6 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView28"
             app:layout_constraintStart_toStartOf="@+id/imageView28"
             app:layout_constraintTop_toTopOf="@+id/imageView28" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
