@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,340 +8,345 @@
     android:background="@color/white"
     tools:context=".fragment.Lecture_detail">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.MainMenuMypageFragment">
 
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="360dp"
-        android:layout_height="155dp"
-        android:contentDescription="TODO"
-        android:src="@drawable/change_mypage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="ContentDescription,HardcodedText" />
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="360dp"
+            android:layout_height="155dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/change_mypage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription,HardcodedText" />
 
-    <ImageView
-        android:id="@+id/rec_1"
-        android:layout_width="290dp"
-        android:layout_height="250dp"
-        android:contentDescription="TODO"
-        android:src="@drawable/rec_detail"
+        <ImageView
+            android:id="@+id/rec_1"
+            android:layout_width="290dp"
+            android:layout_height="250dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/rec_detail"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25"
-        tools:ignore="ContentDescription,HardcodedText" />
-
-
-    <TextView
-        android:id="@+id/name_1"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:text="영문법 기초강의"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
-
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView25"
+            tools:ignore="ContentDescription,HardcodedText" />
 
 
-    <TextView
-        android:id="@+id/one_1"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:textColor="@color/black"
-        android:inputType="text"
-        android:text="접수기간 : "
-        android:textSize="13sp"
+        <TextView
+            android:id="@+id/name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="영문법 기초강의"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
 
-        android:layout_marginTop="65dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/two_1"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:textColor="@color/black"
-        android:text="요일 : "
-        android:textSize="13sp"
-        android:textStyle="normal"
-
-        android:layout_marginTop="85dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/rec_1"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
-    <TextView
-        android:id="@+id/three_1"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:text="교육시간 : "
-        android:textSize="13sp"
-        android:textStyle="normal"
+        <TextView
+            android:id="@+id/one_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:text="접수기간 : "
+            android:textSize="13sp"
 
-        android:layout_marginTop="105dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:id="@+id/three__"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:text="-"
-        android:textSize="13sp"
-        android:textStyle="normal"
+        <TextView
+            android:id="@+id/two_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:text="요일 : "
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-        android:layout_marginTop="105dp"
-        android:layout_marginStart="160dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/four_1"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:textColor="@color/black"
-        android:inputType="text"
-        android:text="교육장소 : "
-        android:textSize="13sp"
-        android:textStyle="normal"
-
-        android:layout_marginTop="125dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/five_1"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:layout_marginEnd="248dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:textColor="@color/black"
-        android:text="수강료 : "
-        android:textSize="13sp"
-        android:textStyle="normal"
-
-        android:layout_marginTop="145dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
-    <ImageView
-        android:id="@+id/imageView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        <TextView
+            android:id="@+id/three_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="교육시간 : "
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView27"
-        app:layout_constraintStart_toStartOf="@+id/imageView27"
-        app:layout_constraintTop_toTopOf="@+id/imageView27"
-        app:srcCompat="@drawable/lecture_pic" />
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <ImageView
-        android:id="@+id/lecture_imagen"
-        android:layout_width="130dp"
-        android:layout_height="100dp"
+        <TextView
+            android:id="@+id/three__"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="-"
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-        app:layout_constraintBottom_toBottomOf="@+id/imageView25"
-        app:layout_constraintEnd_toEndOf="@+id/imageView25"
-        app:layout_constraintStart_toStartOf="@+id/imageView25"
-        app:layout_constraintTop_toTopOf="@+id/imageView25" />
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="160dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:id="@+id/real_term_1"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:text="2023-07-17"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:textStyle="normal"
+        <TextView
+            android:id="@+id/four_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:text="교육장소 : "
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-        android:layout_marginTop="65dp"
-        android:layout_marginStart="73dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            android:layout_marginTop="125dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/five_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginEnd="248dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:text="수강료 : "
+            android:textSize="13sp"
+            android:textStyle="normal"
+
+            android:layout_marginTop="145dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
-    <TextView
-        android:id="@+id/real_term_2"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:text="수,금"
-        android:textColor="@color/black"
-        android:textSize="13sp"
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
 
-        android:layout_marginTop="85dp"
-        android:layout_marginStart="50dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView27"
+            app:layout_constraintStart_toStartOf="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="@+id/imageView27"
+            app:srcCompat="@drawable/lecture_pic" />
 
-    <TextView
-        android:id="@+id/real_term_3"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:textColor="@color/black"
-        android:inputType="text"
-        android:text="10:00 ~ 12:00"
-        android:textSize="13sp"
-        android:textStyle="normal"
+        <ImageView
+            android:id="@+id/lecture_imagen"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
 
-        android:layout_marginTop="105dp"
-        android:layout_marginStart="70dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+            app:layout_constraintEnd_toEndOf="@+id/imageView25"
+            app:layout_constraintStart_toStartOf="@+id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/imageView25" />
 
-    <TextView
-        android:id="@+id/real_term_7"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:text="10:00 ~ 12"
-        android:textSize="13sp"
-        android:textStyle="normal"
+        <TextView
+            android:id="@+id/real_term_1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="2023-07-17"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-        android:layout_marginTop="105dp"
-        android:layout_marginStart="168dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="73dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:id="@+id/real_term_4"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:textColor="@color/black"
-        android:inputType="text"
-        android:text="동대구역"
-        android:textSize="13sp"
-        android:textStyle="normal"
 
-        android:layout_marginTop="125dp"
-        android:layout_marginStart="72dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/real_term_2"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="수,금"
+            android:textColor="@color/black"
+            android:textSize="13sp"
 
-    <TextView
-        android:id="@+id/real_term_5"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:layout_marginTop="145dp"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/aninormal"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:text="20000만원"
-        android:textColor="@color/black"
-        android:textSize="13sp"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
-        android:textStyle="normal"
-        android:layout_marginStart="62dp"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1"
-        tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/real_term_3"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:text="10:00 ~ 12:00"
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="270dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="15dp"
-        android:background="@color/black"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="70dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
-        android:layout_marginTop="55dp"
-        app:layout_constraintEnd_toEndOf="@+id/rec_1"
-        app:layout_constraintStart_toStartOf="@+id/rec_1"
-        app:layout_constraintTop_toTopOf="@+id/rec_1" />
+        <TextView
+            android:id="@+id/real_term_7"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="10:00 ~ 12"
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="168dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="70dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rec_1"
-        app:srcCompat="@drawable/search_sub" />
+        <TextView
+            android:id="@+id/real_term_4"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:text="동대구역"
+            android:textSize="13sp"
+            android:textStyle="normal"
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aninormal"
-        android:text="예약"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
-        app:layout_constraintEnd_toEndOf="@+id/imageView28"
-        app:layout_constraintStart_toStartOf="@+id/imageView28"
-        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+            android:layout_marginTop="125dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
 
+        <TextView
+            android:id="@+id/real_term_5"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="145dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/aninormal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="20000만원"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+
+            android:textStyle="normal"
+            android:layout_marginStart="62dp"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="270dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/black"
+
+            android:layout_marginTop="55dp"
+            app:layout_constraintEnd_toEndOf="@+id/rec_1"
+            app:layout_constraintStart_toStartOf="@+id/rec_1"
+            app:layout_constraintTop_toTopOf="@+id/rec_1" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rec_1"
+            app:srcCompat="@drawable/search_sub" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aninormal"
+            android:text="예약"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+            app:layout_constraintEnd_toEndOf="@+id/imageView28"
+            app:layout_constraintStart_toStartOf="@+id/imageView28"
+            app:layout_constraintTop_toTopOf="@+id/imageView28" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
